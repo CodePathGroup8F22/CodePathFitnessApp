@@ -11,16 +11,16 @@ Original App Design Project -
 
 ## Overview
 ### Description
-Calendar system that tracks a gym goer's exercises. Records what type of work they did, how many reps, and how heavy. 
+Calendar system that tracks an individual's workout routine. It records the workout split (push, pull, or legs), exercise, reps, and weight. Used to help individuals stay on track with their gym schedule, help individuals get into the gym, and help individuals find workouts to try at the gym. 
 
 ### App Evaluation
 [Evaluation of your app across the following attributes]
-- **Category:**
-- **Mobile:**
-- **Story:**
-- **Market:**
-- **Habit:**
-- **Scope:**
+- **Category:** Fitness
+- **Mobile:** This app would be primarily developed for mobile
+- **Story:** Track workout routine, and find exercises for certain muscle groups.
+- **Market:** The market focuses on athletes, body builders, and anyone that goes to the gym to workout. 
+- **Habit:** This app can be used at anytime but mainly during the gym. 
+- **Scope:** 
 
 ## Product Spec
 
@@ -29,8 +29,8 @@ Calendar system that tracks a gym goer's exercises. Records what type of work th
 **Required Must-have Stories**
 
 * Users can log in to access their personal calendar
-* Can put and X or O over a cell to signify that they went to the gym or skipped
-* They can click into each cell in the calendar and see muscle group that is being worked out, exercises, and weight. 
+* They can click into each cell in the calendar and see/record muscle group that is being worked out, exercises, and weight. 
+* Can put and X or O over a cell to signify that they went to the gym or not
 
 **Optional Nice-to-have Stories**
 
@@ -38,35 +38,36 @@ Calendar system that tracks a gym goer's exercises. Records what type of work th
 * Show popular excercise
 * See other people's calendars and what they did or planning to do
 * Intergrate other people's workouts into your own workout
+* Connect with people and talk about excersies in a chat
 
 ### 2. Screen Archetypes
 
+* Register
+   * Users is prompted to enter a username, password, and a valid email to register for the app
 * Login
-   * [list associated required story here]
-   * ...
-* Calendar Screen
-   * [list associated required story here]
-   * ...
+   * Users input their username and password
+   * App checks if the username and password is valid
+   * If not valid show a error message
+   * If valid the app moves into the calendar screen
+* Calendar Screen 
+   * Allow users to look at old workout routines and create new workout for future routines 
 * Search for Exercise Screen
-   * [list associated required story here]
-   * ...
+   * Allow users to scroll through a list of exercises
+   * Users can search by an exercise by name, muscle category, or work split
 
 ### 3. Navigation
 
 **Tab Navigation** (Tab to Screen)
 
-* [fill out your first tab]
-* [fill out your second tab]
-* [fill out your third tab]
+* Calendar
+* List of excersies
+* (Optional) Friends tab to look at friends' calendars
 
 **Flow Navigation** (Screen to Screen)
 
-* [list first screen here]
-   * [list screen navigation here]
-   * ...
-* [list second screen here]
-   * [list screen navigation here]
-   * ...
+* Login -> Account creation if credentials are unknown -> Persoanl Calendar if valid
+* Personal Calendar -> Break down of workout for a specific day
+* List of exercises -> Details of the excercise clicked
 
 ## Wireframes
 [Add picture of your hand sketched wireframes in this section]
