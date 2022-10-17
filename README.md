@@ -80,8 +80,52 @@ Calendar system that tracks an individual's workout routine. It records the work
 ## Schema 
 [This section will be completed in Unit 9]
 ### Models
-[Add table of models]
+#### Workouts
+   | Property      | Type     | Description |
+   | ------------- | -------- | ------------|
+   | objectId      | String   | unique id for the user post (default field) |
+   | workout       | String   | name of the workout |
+   | image         | File     | image of the workout |
+   | caption       | String   | description of the workout |
+#### WorkoutGroup
+   | Property      | Type     | Description  |
+   | ------------- | -------- | ------------ |
+   | objectId      | String   | unique id for each workout group (default field) |
+   | workoutGroup  | String   | name of the workout group |
+   | workouts      | Array    | array consisting of the objectId's of individual workouts related to this muscle group |
+   
+#### User
+   | Property      | Type     | Description |
+   | ------------- | -------- | ------------|
+   | objectId      | String   | unique id for the user post (default field) |
+   | author        | Pointer to User| image author |
+   | image         | File     | image of user |
+   | weight        | Number   | weight of user |
+   | height        | Number   | height of user |
+   | age           | Number   | age of user |
+   | createdAt     | DateTime | date when user object is created (default field) |
+   | updatedAt     | DateTime | date when user information is last updated (default field) |
+   
 ### Networking
-- [Add list of network requests by screen ]
+- Home Screen
+  - (READ/GET) Query all popular workouts
+- Workout Category Screen
+  - (READ/GET) Query all workout groups
+- Workout List Screen
+  - (READ/GET) Query all workouts where workout group id is the selected workout group
+- Individal Workout Screen
+  - (READ/GET) Query workout where workout id is the selected workou
+- Sign Up Screen
+  - (CREATE/POST) Create a new user object
+- Profile Screen
+  - (READ/GET) Query logged in user object
+  - (UPDATE/PUT) Update user profile image
+  - (UPDATE/PUT) Update user weight
+  - (UPDATE/PUT) Update user height
+  - (UPDATE/PUT) Update user age
+- Calendar Screen
+  - (CREATE/POST) Create a new calendar/date event
+  - (UPDATE/PUT) Update selected date event
+<!--- [Add list of network requests by screen ]
 - [Create basic snippets for each Parse network request]
-- [OPTIONAL: List endpoints if using existing API such as Yelp]
+- [OPTIONAL: List endpoints if using existing API such as Yelp] ---!>
