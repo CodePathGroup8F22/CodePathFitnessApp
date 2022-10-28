@@ -15,8 +15,14 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var passwordLabel: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        
         invalidLabel.isHidden = true
+        
+        let gradientLayer = CAGradientLayer()
+        gradientLayer.frame = self.view.bounds
+        gradientLayer.colors = [UIColor.blue.cgColor, UIColor.white.cgColor]
+        self.view.layer.insertSublayer(gradientLayer, at: 0)
         // Do any additional setup after loading the view.
     }
     
@@ -27,6 +33,7 @@ class LoginViewController: UIViewController {
         PFUser.logInWithUsername(inBackground: username, password: password) {(user,error) in
             if user != nil {
                 self.invalidLabel.isHidden = true
+                UserDefaults.standard.set(true, forKey: "userLoggedIn")
                 self.performSegue(withIdentifier: "loginSegue", sender: nil)
             } else {
                 self.invalidLabel.isHidden = false
@@ -34,6 +41,12 @@ class LoginViewController: UIViewController {
             }
         }
         
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        if UserDefaults.standard.bool(forKey: "userLoggedIn") == true {
+            self.performSegue(withIdentifier: "loginSegue", sender: nil)
+        }
     }
     
     /*
