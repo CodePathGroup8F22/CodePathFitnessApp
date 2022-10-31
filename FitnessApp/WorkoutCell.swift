@@ -15,8 +15,11 @@ class WorkoutCell: UITableViewCell {
     @IBOutlet weak var fire3: UIImageView!
     @IBOutlet weak var fire4: UIImageView!
     @IBOutlet weak var fire5: UIImageView!
+    
+    var arr = [UIImageView]()
     override func awakeFromNib() {
         super.awakeFromNib()
+        arr = [fire1,fire2,fire3,fire4,fire5]
         // Initialization code
     }
 
