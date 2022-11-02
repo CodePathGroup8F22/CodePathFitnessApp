@@ -22,6 +22,7 @@
 		24560E5C28FF99F300E4C923 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24560E5B28FF99F300E4C923 /* SignUpViewController.swift */; };
 		24560E5E28FFA28700E4C923 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24560E5D28FFA28700E4C923 /* LoginViewController.swift */; };
 		247DDB78290BAA7B00D0A434 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247DDB77290BAA7B00D0A434 /* HomeViewController.swift */; };
+		24844E852913033F005EC66F /* HomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24844E842913033F005EC66F /* HomeCell.swift */; };
 		67F1B09ECEB58A9199C091A6 /* Pods_FitnessApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 220EDDBE4A59BEF0D1C160EF /* Pods_FitnessApp.framework */; };
 		A401B9BA2912FD5B005928BB /* WorkoutLog.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A401B9B92912FD5A005928BB /* WorkoutLog.storyboard */; };
 		A401B9BC291301F4005928BB /* WorkoutLogViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A401B9BB291301F4005928BB /* WorkoutLogViewCell.swift */; };
@@ -69,6 +70,7 @@
 		24560E5B28FF99F300E4C923 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		24560E5D28FFA28700E4C923 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		247DDB77290BAA7B00D0A434 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		24844E842913033F005EC66F /* HomeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCell.swift; sourceTree = "<group>"; };
 		676E384EF769BB64DACE5EA3 /* Pods-FitnessAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitnessAppTests.release.xcconfig"; path = "Target Support Files/Pods-FitnessAppTests/Pods-FitnessAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		780F20E54067F54222E79621 /* Pods_FitnessApp_FitnessAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FitnessApp_FitnessAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F4545B5AF4FD607E131D7A5 /* Pods-FitnessAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitnessAppTests.debug.xcconfig"; path = "Target Support Files/Pods-FitnessAppTests/Pods-FitnessAppTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -152,6 +154,7 @@
 				A401B9BD29130324005928BB /* WorkoutLogViewController.swift */,
 				A401B9BB291301F4005928BB /* WorkoutLogViewCell.swift */,
 				247DDB77290BAA7B00D0A434 /* HomeViewController.swift */,
+				24844E842913033F005EC66F /* HomeCell.swift */,
 				2425537B290B811F00E77684 /* WorkoutList.storyboard */,
 				24255381290B83E700E77684 /* WorkoutListViewController.swift */,
 				24255383290B950700E77684 /* WorkoutCell.swift */,
@@ -444,6 +447,7 @@
 				24560E5C28FF99F300E4C923 /* SignUpViewController.swift in Sources */,
 				A401B9BC291301F4005928BB /* WorkoutLogViewCell.swift in Sources */,
 				24560E5E28FFA28700E4C923 /* LoginViewController.swift in Sources */,
+				24844E852913033F005EC66F /* HomeCell.swift in Sources */,
 				24560E2E28FF970D00E4C923 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

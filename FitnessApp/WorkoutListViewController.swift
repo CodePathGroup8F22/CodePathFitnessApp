@@ -12,6 +12,7 @@ import AlamofireImage
 class WorkoutListViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     var workouts = [PFObject]()
+    var muscleGroup: String = ""
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return workouts.count
@@ -37,7 +38,7 @@ class WorkoutListViewController: UIViewController, UITableViewDataSource, UITabl
         
         let query = PFQuery(className: "workout")
         query.includeKey("muscleGroup")
-        query.whereKey("muscleGroup", equalTo: "Quads")
+        query.whereKey("muscleGroup", equalTo: muscleGroup)
         query.limit = 20
         
         query.findObjectsInBackground{ (workout, error) in
