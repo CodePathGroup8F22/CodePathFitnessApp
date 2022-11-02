@@ -19,10 +19,10 @@ class LoginViewController: UIViewController {
         
         invalidLabel.isHidden = true
         
-        let gradientLayer = CAGradientLayer()
-        gradientLayer.frame = self.view.bounds
-        gradientLayer.colors = [UIColor.blue.cgColor, UIColor.black.cgColor]
-        self.view.layer.insertSublayer(gradientLayer, at: 0)
+//        let gradientLayer = CAGradientLayer()
+//        gradientLayer.frame = self.view.bounds
+//        gradientLayer.colors = [UIColor.blue.cgColor, UIColor.black.cgColor]
+//        self.view.layer.insertSublayer(gradientLayer, at: 0)
         // Do any additional setup after loading the view.
     }
     
@@ -44,9 +44,9 @@ class LoginViewController: UIViewController {
     }
     
     override func viewDidAppear(_ animated: Bool) {
-//        if UserDefaults.standard.bool(forKey: "userLoggedIn") == true {
-//            self.performSegue(withIdentifier: "loginSegue", sender: nil)
-//        }
+        if UserDefaults.standard.bool(forKey: "userLoggedIn") == true {
+            self.performSegue(withIdentifier: "loginSegue", sender: nil)
+        }
     }
     
     /*

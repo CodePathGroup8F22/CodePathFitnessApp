@@ -21,6 +21,7 @@ class WorkoutListViewController: UIViewController, UITableViewDataSource, UITabl
     
 
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var muscleGroupLabel: UILabel!
     
     
     override func viewDidLoad() {
@@ -50,6 +51,7 @@ class WorkoutListViewController: UIViewController, UITableViewDataSource, UITabl
             }
             
         }
+        muscleGroupLabel.text = muscleGroup
     }
         
         func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -87,14 +89,22 @@ class WorkoutListViewController: UIViewController, UITableViewDataSource, UITabl
         }
         
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
+        let cell = sender as! UITableViewCell
+        let indexPath = tableView.indexPath(for: cell)!
+        let workout = self.workouts[indexPath.row]
+        let DetailViewController = segue.destination as! DetailViewController
+        DetailViewController.workout = (workout as PFObject?)!
+        print(workout)
+                
+        tableView.deselectRow(at: indexPath, animated: true)
     }
-    */
+    
 
 }

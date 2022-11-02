@@ -14,6 +14,8 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     var imageList = [UIImage(named: "stock1"), UIImage(named: "stock"), UIImage(named: "stock1")]
     
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var userLabel: UILabel!
+    @IBOutlet weak var tempLabel: UILabel!
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -58,9 +60,9 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
             }
                 
         let user = PFUser.current()
-//                userLabel.text = user!["firstname"] as! String
-//                userLabel.isHidden = false
-//                tempLabel.isHidden = false
+        userLabel.text = user!["firstname"] as! String
+        userLabel.isHidden = false
+        tempLabel.isHidden = false
     }
     // MARK: - Navigation
 
