@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2y0-LK-6WK">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2y0-LK-6WK">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -82,7 +83,7 @@
                         <outlet property="emailLabel" destination="51w-BP-IBH" id="8eT-xI-1vN"/>
                         <outlet property="invalidLabel" destination="PwY-hz-kEL" id="JF4-F0-IT2"/>
                         <outlet property="passwordLabel" destination="iG3-P2-0VA" id="UJw-UM-Gz8"/>
-                        <segue destination="eDP-Nd-vWb" kind="presentation" identifier="loginSegue" modalPresentationStyle="fullScreen" id="31G-kG-c7D"/>
+                        <segue destination="k2n-O6-ZVk" kind="presentation" identifier="loginSegue" modalPresentationStyle="fullScreen" id="TLQ-MX-IiL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oVb-Hn-L3G" sceneMemberID="firstResponder"/>
@@ -152,15 +153,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="efU-Vt-7YV">
-                                <rect key="frame" x="170" y="508" width="75" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Sign Up"/>
-                                <connections>
-                                    <action selector="onSignUp:" destination="6sE-J2-wxg" eventType="touchUpInside" id="24K-db-K4G"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sign Up" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="60Z-qW-Lfk">
                                 <rect key="frame" x="138" y="106" width="139" height="66"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -168,6 +160,15 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="efU-Vt-7YV">
+                                <rect key="frame" x="161" y="506" width="92" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Sign Up"/>
+                                <connections>
+                                    <action selector="onSignUp:" destination="6sE-J2-wxg" eventType="touchUpInside" id="24K-db-K4G"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ftY-gI-WdA"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -178,18 +179,18 @@
                         <outlet property="firstNameLabel" destination="4T1-uF-LTV" id="7Zm-j8-FYM"/>
                         <outlet property="lastNameLabel" destination="xzT-gz-Eqy" id="BBK-oN-VdW"/>
                         <outlet property="passwordLabel" destination="F7T-y1-ILz" id="eIY-cL-N77"/>
-                        <segue destination="eDP-Nd-vWb" kind="presentation" identifier="signupSegue" modalPresentationStyle="fullScreen" id="oCM-ap-65v"/>
+                        <segue destination="k2n-O6-ZVk" kind="presentation" identifier="loginSegue" id="2mL-w7-5Da"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xRm-y6-5qT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="K9w-SL-l1u" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="-55" y="61"/>
+            <point key="canvasLocation" x="-55.072463768115945" y="60.9375"/>
         </scene>
-        <!--Home View Controller-->
+        <!--Home-->
         <scene sceneID="hd4-9f-tEZ">
             <objects>
-                <viewController id="eDP-Nd-vWb" customClass="HomeViewController" customModule="FitnessApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="eDP-Nd-vWb" customClass="HomeViewController" customModule="FitnessApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lPj-6n-3l1">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -215,10 +216,11 @@
                         <viewLayoutGuide key="safeArea" id="FKh-ZS-u7X"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Home" id="4HP-Dz-hCw"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0GF-EZ-iWL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-488.40579710144931" y="730.58035714285711"/>
+            <point key="canvasLocation" x="-1100" y="1582"/>
         </scene>
         <!--WorkoutList-->
         <scene sceneID="wKN-DZ-BL6">
@@ -226,11 +228,82 @@
                 <viewControllerPlaceholder storyboardName="WorkoutList" id="yBA-L1-9Sg" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nwv-on-ieT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="441" y="671"/>
+            <point key="canvasLocation" x="-543" y="1551"/>
+        </scene>
+        <!--Calendar-->
+        <scene sceneID="YuW-Ns-9EX">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="ARG-5M-gKV" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cfl-4V-67n">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V8i-Jb-GIS">
+                                <rect key="frame" x="186" y="0.0" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="October 2022" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JmA-pn-HfM">
+                                <rect key="frame" x="137" y="75" width="140" height="35"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gHO-Sf-y8T">
+                                <rect key="frame" x="277" y="75" width="137" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Right"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eIx-eE-UeP">
+                                <rect key="frame" x="0.0" y="75" width="137" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Left"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="1ZX-hg-Pst"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="eIx-eE-UeP" firstAttribute="centerY" secondItem="JmA-pn-HfM" secondAttribute="centerY" id="EgJ-nJ-7Js"/>
+                            <constraint firstItem="1ZX-hg-Pst" firstAttribute="trailing" secondItem="gHO-Sf-y8T" secondAttribute="trailing" id="El1-qh-UMS"/>
+                            <constraint firstItem="JmA-pn-HfM" firstAttribute="top" secondItem="1ZX-hg-Pst" secondAttribute="top" constant="27" id="JCm-FZ-L3F"/>
+                            <constraint firstItem="gHO-Sf-y8T" firstAttribute="centerY" secondItem="JmA-pn-HfM" secondAttribute="centerY" id="KfC-nO-GvS"/>
+                            <constraint firstItem="JmA-pn-HfM" firstAttribute="leading" secondItem="eIx-eE-UeP" secondAttribute="trailing" id="WFC-Sa-eaD"/>
+                            <constraint firstItem="eIx-eE-UeP" firstAttribute="leading" secondItem="1ZX-hg-Pst" secondAttribute="leading" id="Ydk-Kg-9t0"/>
+                            <constraint firstItem="gHO-Sf-y8T" firstAttribute="height" secondItem="JmA-pn-HfM" secondAttribute="height" id="aQW-by-7az"/>
+                            <constraint firstItem="gHO-Sf-y8T" firstAttribute="leading" secondItem="JmA-pn-HfM" secondAttribute="trailing" id="bom-Lm-Vl2"/>
+                            <constraint firstItem="JmA-pn-HfM" firstAttribute="centerX" secondItem="1ZX-hg-Pst" secondAttribute="centerX" id="fPk-DY-efv"/>
+                            <constraint firstItem="eIx-eE-UeP" firstAttribute="height" secondItem="JmA-pn-HfM" secondAttribute="height" id="m9B-3f-ImK"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Calendar" id="sO9-zr-y0U"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dfh-Xn-cOv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="335" y="1582"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="lOY-Mq-0zM">
+            <objects>
+                <tabBarController id="k2n-O6-ZVk" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="mJg-ul-yHn">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="eDP-Nd-vWb" kind="relationship" relationship="viewControllers" id="Bar-dN-tRv"/>
+                        <segue destination="ARG-5M-gKV" kind="relationship" relationship="viewControllers" id="0eW-z0-dEC"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7pT-ac-O33" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-467" y="826"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="31G-kG-c7D"/>
+        <segue reference="TLQ-MX-IiL"/>
     </inferredMetricsTieBreakers>
     <resources>
         <namedColor name="AccentColor">
