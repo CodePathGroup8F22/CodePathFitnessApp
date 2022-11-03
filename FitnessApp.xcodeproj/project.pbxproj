@@ -29,6 +29,8 @@
 		A401B9BC291301F4005928BB /* WorkoutLogViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A401B9BB291301F4005928BB /* WorkoutLogViewCell.swift */; };
 		A401B9BE29130324005928BB /* WorkoutLogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A401B9BD29130324005928BB /* WorkoutLogViewController.swift */; };
 		A638E711504F38651B472A39 /* Pods_FitnessAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B76B6AC0760378DD83D90E95 /* Pods_FitnessAppTests.framework */; };
+		CAAF45262913943E00F89320 /* CalendarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAAF45252913943E00F89320 /* CalendarCell.swift */; };
+		CAAF45282913960200F89320 /* CalendarCellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAAF45272913960200F89320 /* CalendarCellViewController.swift */; };
 		DFB363590BBE50E7AF336688 /* Pods_FitnessApp_FitnessAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 780F20E54067F54222E79621 /* Pods_FitnessApp_FitnessAppUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -82,6 +84,8 @@
 		A90CA0B4959782FF954ECBD9 /* Pods-FitnessApp-FitnessAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitnessApp-FitnessAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-FitnessApp-FitnessAppUITests/Pods-FitnessApp-FitnessAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		B6A3E71E0DBE275311DDEBBE /* Pods-FitnessApp-FitnessAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitnessApp-FitnessAppUITests.release.xcconfig"; path = "Target Support Files/Pods-FitnessApp-FitnessAppUITests/Pods-FitnessApp-FitnessAppUITests.release.xcconfig"; sourceTree = "<group>"; };
 		B76B6AC0760378DD83D90E95 /* Pods_FitnessAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FitnessAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CAAF45252913943E00F89320 /* CalendarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarCell.swift; sourceTree = "<group>"; };
+		CAAF45272913960200F89320 /* CalendarCellViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarCellViewController.swift; sourceTree = "<group>"; };
 		CBFA133E61B56593E0326067 /* Pods-FitnessApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitnessApp.release.xcconfig"; path = "Target Support Files/Pods-FitnessApp/Pods-FitnessApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -151,6 +155,8 @@
 				24560E2B28FF970D00E4C923 /* AppDelegate.swift */,
 				24560E2D28FF970D00E4C923 /* SceneDelegate.swift */,
 				24560E2F28FF970D00E4C923 /* ViewController.swift */,
+				CAAF45272913960200F89320 /* CalendarCellViewController.swift */,
+				CAAF45252913943E00F89320 /* CalendarCell.swift */,
 				24560E3128FF970D00E4C923 /* Main.storyboard */,
 				A401B9B92912FD5A005928BB /* WorkoutLog.storyboard */,
 				A401B9BD29130324005928BB /* WorkoutLogViewController.swift */,
@@ -441,6 +447,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CAAF45282913960200F89320 /* CalendarCellViewController.swift in Sources */,
 				24560E3028FF970D00E4C923 /* ViewController.swift in Sources */,
 				24255384290B950700E77684 /* WorkoutCell.swift in Sources */,
 				24255382290B83E700E77684 /* WorkoutListViewController.swift in Sources */,
@@ -452,6 +459,7 @@
 				A401B9BC291301F4005928BB /* WorkoutLogViewCell.swift in Sources */,
 				24560E5E28FFA28700E4C923 /* LoginViewController.swift in Sources */,
 				24844E852913033F005EC66F /* HomeCell.swift in Sources */,
+				CAAF45262913943E00F89320 /* CalendarCell.swift in Sources */,
 				24560E2E28FF970D00E4C923 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
