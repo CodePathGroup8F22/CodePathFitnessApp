@@ -20,16 +20,17 @@ class WorkoutLogViewController: UIViewController, UITableViewDelegate, UITableVi
     override func viewDidLoad() {
         super.viewDidLoad()
         headerLabel.text = date
-//        print(workoutPosts)
+        tableViewWorkoutLog.delegate = self
+        tableViewWorkoutLog.dataSource = self
+        tableViewWorkoutLog.rowHeight = 150
         getData()
+
         // Do any additional setup after loading the view.
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         print("Workout Log: ", date)
-        
-        
         
     }
     
@@ -42,8 +43,8 @@ class WorkoutLogViewController: UIViewController, UITableViewDelegate, UITableVi
         
         query.findObjectsInBackground{ (workout, error) in
             if workout != nil {
-                print(workout!)
-                self.workoutPosts = workout!
+                var workoutPost = workout!
+                self.workoutPosts = workoutPost
                 self.tableViewWorkoutLog.reloadData()
             } else {
                 print("Error\(String(describing: error))")
@@ -73,10 +74,10 @@ class WorkoutLogViewController: UIViewController, UITableViewDelegate, UITableVi
         
         cell.exerciseLabel.text = workoutPost["workout"] as? String
         
-        cell.setLabel.text = (workoutPost["set"] as? String)
-        cell.repLabel.text = (workoutPost["reps"] as? String)
-        cell.weightLabel.text = (workoutPost["weight"] as? String)
-        
+        cell.setLabel.text!.append( (workoutPost["set"] as! String) )
+        cell.repLabel.text!.append( (workoutPost["reps"] as! String))
+        cell.weightLabel.text!.append( (workoutPost["weight"] as! String))
+        print("SUCCESS")
         return cell
         
     }
