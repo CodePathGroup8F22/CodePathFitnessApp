@@ -10,11 +10,19 @@ import UIKit
 class WorkoutLogViewController: UIViewController {
 
     @IBOutlet weak var tableViewWorkoutLog: UITableView!
+    var date : String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
 
         // Do any additional setup after loading the view.
+    }
+    
+
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        print("Workout Log: ", date)
     }
     
 
