@@ -369,15 +369,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="428" height="789"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tph-jp-XXZ">
-                                <rect key="frame" x="20" y="684" width="166" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button" subtitle=""/>
-                                <connections>
-                                    <segue destination="G5t-j5-Gba" kind="presentation" id="SoU-a1-MkM"/>
-                                </connections>
-                            </button>
                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="w5U-Ww-ENG" customClass="FSCalendar">
                                 <rect key="frame" x="0.0" y="0.0" width="428" height="536"/>
                                 <color key="backgroundColor" red="0.1595946848" green="0.2188673615" blue="0.32496589419999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -427,6 +418,15 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tph-jp-XXZ">
+                                <rect key="frame" x="131" y="662" width="166" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button" subtitle=""/>
+                                <connections>
+                                    <segue destination="G5t-j5-Gba" kind="presentation" id="SoU-a1-MkM"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="1ZX-hg-Pst"/>
                         <color key="backgroundColor" red="0.1595946848" green="0.2188673615" blue="0.32496589419999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
