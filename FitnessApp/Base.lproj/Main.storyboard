@@ -365,7 +365,7 @@
         <!--Calendar-->
         <scene sceneID="YuW-Ns-9EX">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="ARG-5M-gKV" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="ARG-5M-gKV" customClass="CalendarCellViewController" customModule="FitnessApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cfl-4V-67n">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="786"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -375,7 +375,7 @@
                                 <color key="backgroundColor" red="0.1595946848" green="0.2188673615" blue="0.32496589419999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="600" id="bLg-wV-KrZ"/>
+                                    <constraint firstAttribute="height" constant="800" id="bLg-wV-KrZ"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="titleDefaultColor">
