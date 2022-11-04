@@ -20,7 +20,8 @@ class WorkoutLogViewController: UIViewController, UITableViewDelegate, UITableVi
     override func viewDidLoad() {
         super.viewDidLoad()
         headerLabel.text = date
-
+//        print(workoutPosts)
+        getData()
         // Do any additional setup after loading the view.
     }
     
@@ -28,26 +29,27 @@ class WorkoutLogViewController: UIViewController, UITableViewDelegate, UITableVi
         super.viewDidAppear(animated)
         print("Workout Log: ", date)
         
+        
+        
+    }
+    
+    @objc func getData() {
         let query = PFQuery(className: "workoutPost")
-        
-        query.includeKey("user")
-        query.includeKey("date")
-        
-        query.whereKey("user", equalTo: user!.objectId)
+        query.includeKeys(["user","date"])
+        query.whereKey("user", equalTo: user!.objectId!)
         query.whereKey("date", equalTo: date)
         query.limit = 20
         
         query.findObjectsInBackground{ (workout, error) in
             if workout != nil {
+                print(workout!)
                 self.workoutPosts = workout!
                 self.tableViewWorkoutLog.reloadData()
             } else {
                 print("Error\(String(describing: error))")
             }
         }
-        print(workoutPosts)
     }
-    
 
     // MARK: - Navigation
 
