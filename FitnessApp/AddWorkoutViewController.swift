@@ -7,16 +7,20 @@
 
 import UIKit
 import Parse
+import FSCalendar
 
 class AddWorkoutViewController: UIViewController {
 
     @IBOutlet weak var workoutField: UITextField!
     @IBOutlet weak var repField: UITextField!
     @IBOutlet weak var weightField: UITextField!
+    var user = PFUser()
+    var date: String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        print(user.objectId)
+        print(date)
         // Do any additional setup after loading the view.
     }
     

@@ -6,13 +6,14 @@
 //
 
 import UIKit
+import Parse
 
 class WorkoutLogViewController: UIViewController {
 
     @IBOutlet weak var tableViewWorkoutLog: UITableView!
     @IBOutlet weak var headerLabel: UILabel!
     var date : String = ""
-    
+    var user = PFUser.current()
     override func viewDidLoad() {
         super.viewDidLoad()
         headerLabel.text = date
@@ -26,14 +27,15 @@ class WorkoutLogViewController: UIViewController {
     }
     
 
-    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
+        let toViewController = segue.destination as? AddWorkoutViewController
+        toViewController?.user = user!
+        toViewController?.date = date
     }
-    */
 
 }
