@@ -10,11 +10,12 @@ import UIKit
 class WorkoutLogViewController: UIViewController {
 
     @IBOutlet weak var tableViewWorkoutLog: UITableView!
+    @IBOutlet weak var headerLabel: UILabel!
     var date : String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        headerLabel.text = date
 
         // Do any additional setup after loading the view.
     }
