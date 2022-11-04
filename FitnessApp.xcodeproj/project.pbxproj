@@ -27,6 +27,7 @@
 		67F1B09ECEB58A9199C091A6 /* Pods_FitnessApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 220EDDBE4A59BEF0D1C160EF /* Pods_FitnessApp.framework */; };
 		A401B9BA2912FD5B005928BB /* WorkoutLog.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A401B9B92912FD5A005928BB /* WorkoutLog.storyboard */; };
 		A401B9BE29130324005928BB /* WorkoutLogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A401B9BD29130324005928BB /* WorkoutLogViewController.swift */; };
+		A408115E2915B0FA006A48F0 /* WorkoutLogCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A408115D2915B0FA006A48F0 /* WorkoutLogCell.swift */; };
 		A4B13A08291472A700BD1A36 /* AddWorkoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B13A07291472A700BD1A36 /* AddWorkoutViewController.swift */; };
 		A638E711504F38651B472A39 /* Pods_FitnessAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B76B6AC0760378DD83D90E95 /* Pods_FitnessAppTests.framework */; };
 		CAAF45262913943E00F89320 /* CalendarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAAF45252913943E00F89320 /* CalendarCell.swift */; };
@@ -80,6 +81,7 @@
 		9F4545B5AF4FD607E131D7A5 /* Pods-FitnessAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitnessAppTests.debug.xcconfig"; path = "Target Support Files/Pods-FitnessAppTests/Pods-FitnessAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A401B9B92912FD5A005928BB /* WorkoutLog.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WorkoutLog.storyboard; sourceTree = "<group>"; };
 		A401B9BD29130324005928BB /* WorkoutLogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutLogViewController.swift; sourceTree = "<group>"; };
+		A408115D2915B0FA006A48F0 /* WorkoutLogCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutLogCell.swift; sourceTree = "<group>"; };
 		A4B13A07291472A700BD1A36 /* AddWorkoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWorkoutViewController.swift; sourceTree = "<group>"; };
 		A90CA0B4959782FF954ECBD9 /* Pods-FitnessApp-FitnessAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitnessApp-FitnessAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-FitnessApp-FitnessAppUITests/Pods-FitnessApp-FitnessAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		B6A3E71E0DBE275311DDEBBE /* Pods-FitnessApp-FitnessAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitnessApp-FitnessAppUITests.release.xcconfig"; path = "Target Support Files/Pods-FitnessApp-FitnessAppUITests/Pods-FitnessApp-FitnessAppUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -167,6 +169,7 @@
 				24560E5B28FF99F300E4C923 /* SignUpViewController.swift */,
 				24560E5D28FFA28700E4C923 /* LoginViewController.swift */,
 				A401B9B92912FD5A005928BB /* WorkoutLog.storyboard */,
+				A408115D2915B0FA006A48F0 /* WorkoutLogCell.swift */,
 				A4B13A07291472A700BD1A36 /* AddWorkoutViewController.swift */,
 				A401B9BD29130324005928BB /* WorkoutLogViewController.swift */,
 				24560E3428FF971300E4C923 /* Assets.xcassets */,
@@ -455,6 +458,7 @@
 				24844E8729130998005EC66F /* DetailViewController.swift in Sources */,
 				A401B9BE29130324005928BB /* WorkoutLogViewController.swift in Sources */,
 				247DDB78290BAA7B00D0A434 /* HomeViewController.swift in Sources */,
+				A408115E2915B0FA006A48F0 /* WorkoutLogCell.swift in Sources */,
 				24560E2C28FF970D00E4C923 /* AppDelegate.swift in Sources */,
 				24560E5C28FF99F300E4C923 /* SignUpViewController.swift in Sources */,
 				24560E5E28FFA28700E4C923 /* LoginViewController.swift in Sources */,

@@ -14,12 +14,14 @@ class AddWorkoutViewController: UIViewController {
     @IBOutlet weak var workoutField: UITextField!
     @IBOutlet weak var repField: UITextField!
     @IBOutlet weak var weightField: UITextField!
+    @IBOutlet weak var setField: UITextField!
+    
     var user = PFUser()
     var date: String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(user.objectId)
+        print(user.objectId!)
         print(date)
         // Do any additional setup after loading the view.
     }
@@ -27,7 +29,11 @@ class AddWorkoutViewController: UIViewController {
     @IBAction func addExerciseButton(_ sender: Any) {
         let workoutPost = PFObject(className: "workoutPost")
         
+        
+        workoutPost["user"] = user.objectId!
+        workoutPost["date"] = date
         workoutPost["workout"] = workoutField.text!
+        workoutPost["set"] = setField.text!
         workoutPost["reps"] = repField.text!
         workoutPost["weight"] = weightField.text!
         

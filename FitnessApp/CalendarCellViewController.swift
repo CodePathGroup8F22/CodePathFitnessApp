@@ -29,7 +29,7 @@ class CalendarCellViewController: UIViewController, FSCalendarDelegate, FSCalend
         //print("Hello")
         var formatter = DateFormatter()
         formatter = DateFormatter()
-        formatter.dateFormat = "YYYY/MM/dd"
+        formatter.dateFormat = "MM/dd/YYYY"
         let newDate = formatter.string(from: date)
         //print("New date: ", newDate)
         self.calDate = newDate
