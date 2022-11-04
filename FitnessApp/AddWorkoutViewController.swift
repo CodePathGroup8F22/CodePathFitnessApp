@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Parse
 
 class AddWorkoutViewController: UIViewController {
 
@@ -20,7 +21,21 @@ class AddWorkoutViewController: UIViewController {
     }
     
     @IBAction func addExerciseButton(_ sender: Any) {
+        let workoutPost = PFObject(className: "workoutPost")
         
+        workoutPost["workout"] = workoutField.text!
+        workoutPost["reps"] = repField.text!
+        workoutPost["weight"] = weightField.text!
+        
+        workoutPost.saveInBackground {(success, error) in
+            if success {
+                self.dismiss(animated: true, completion: nil)
+                print("saved")
+            }
+            else {
+                print("error")
+            }
+        }
     }
     
     
