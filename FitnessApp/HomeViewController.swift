@@ -11,7 +11,7 @@ import Parse
 class HomeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     var workoutGroup = [PFObject]()
-    var imageList = [UIImage(named: "stock1"), UIImage(named: "stock"), UIImage(named: "stock2"), UIImage(named:"stock3")]
+    var imageList = [UIImage(named: "stock"), UIImage(named: "stock1"), UIImage(named: "stock2"), UIImage(named:"stock3")]
     
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var userLabel: UILabel!
