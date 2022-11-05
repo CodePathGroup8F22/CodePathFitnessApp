@@ -56,7 +56,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         let group = workoutGroup[indexPath.row]
         cell.imageLabel.text = group["name"] as! String
         
-        let imageFile = imageList[indexPath.row % 3] as! UIImage
+        let imageFile = imageList[indexPath.row % 4] as! UIImage
         cell.imagePoster.image = imageFile
         cell.imagePoster.layer.cornerRadius = 30
         
