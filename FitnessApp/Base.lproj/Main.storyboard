@@ -269,7 +269,7 @@
             </objects>
             <point key="canvasLocation" x="-56.074766355140184" y="60.90712742980562"/>
         </scene>
-        <!--Home-->
+        <!--Home View Controller-->
         <scene sceneID="hd4-9f-tEZ">
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="eDP-Nd-vWb" customClass="HomeViewController" customModule="FitnessApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -312,7 +312,7 @@
                                         <connections>
                                             <outlet property="imageLabel" destination="v50-cn-Gq9" id="MSo-Ib-Jki"/>
                                             <outlet property="imagePoster" destination="ZgD-0I-QJ9" id="NZz-9f-4MQ"/>
-                                            <segue destination="yBA-L1-9Sg" kind="presentation" id="Hse-Uz-pli"/>
+                                            <segue destination="yBA-L1-9Sg" kind="show" id="Hse-Uz-pli"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -340,9 +340,7 @@
                         <viewLayoutGuide key="safeArea" id="FKh-ZS-u7X"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Home" image="home-1" id="4HP-Dz-hCw">
-                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="4"/>
-                    </tabBarItem>
+                    <navigationItem key="navigationItem" id="CQ0-Qb-NP6"/>
                     <connections>
                         <outlet property="tableView" destination="6A9-Uc-bQ6" id="aED-w3-ymr"/>
                         <outlet property="tempLabel" destination="TUU-ls-4ep" id="3Xj-bw-9tZ"/>
@@ -351,17 +349,19 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0GF-EZ-iWL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1100.467289719626" y="1581.6414686825055"/>
+            <point key="canvasLocation" x="-200.46728971962617" y="1581.6414686825055"/>
         </scene>
         <!--WorkoutList-->
         <scene sceneID="wKN-DZ-BL6">
             <objects>
-                <viewControllerPlaceholder storyboardName="WorkoutList" id="yBA-L1-9Sg" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="WorkoutList" id="yBA-L1-9Sg" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="5MG-s3-IqO"/>
+                </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nwv-on-ieT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-543" y="1551"/>
+            <point key="canvasLocation" x="356.07476635514018" y="1550.5399568034559"/>
         </scene>
-        <!--Calendar-->
+        <!--Calendar Cell View Controller-->
         <scene sceneID="YuW-Ns-9EX">
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="ARG-5M-gKV" customClass="CalendarCellViewController" customModule="FitnessApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -427,20 +427,22 @@
                             <constraint firstItem="w5U-Ww-ENG" firstAttribute="top" secondItem="1ZX-hg-Pst" secondAttribute="top" id="NA7-D3-ciE"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Calendar" image="calendar" selectedImage="calendar" id="sO9-zr-y0U"/>
+                    <navigationItem key="navigationItem" id="oC9-wB-QXS"/>
                     <connections>
                         <outlet property="calendar" destination="w5U-Ww-ENG" id="CGJ-qy-iOA"/>
-                        <segue destination="G5t-j5-Gba" kind="presentation" identifier="logSegue" id="rjG-gf-qyk"/>
+                        <segue destination="G5t-j5-Gba" kind="push" identifier="logSegue" id="rjG-gf-qyk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dfh-Xn-cOv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="345" y="1582"/>
+            <point key="canvasLocation" x="2144.8598130841119" y="1581.6414686825055"/>
         </scene>
         <!--WorkoutLog-->
         <scene sceneID="jbb-OH-6Ei">
             <objects>
-                <viewControllerPlaceholder storyboardName="WorkoutLog" id="G5t-j5-Gba" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="WorkoutLog" id="G5t-j5-Gba" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Xj3-6k-5NY"/>
+                </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4c0-KJ-0Fh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="346" y="1982"/>
@@ -459,13 +461,53 @@
                         <tabBarAppearance key="scrollEdgeAppearance"/>
                     </tabBar>
                     <connections>
-                        <segue destination="eDP-Nd-vWb" kind="relationship" relationship="viewControllers" id="Bar-dN-tRv"/>
-                        <segue destination="ARG-5M-gKV" kind="relationship" relationship="viewControllers" id="0eW-z0-dEC"/>
+                        <segue destination="umJ-rn-AmW" kind="relationship" relationship="viewControllers" id="Bar-dN-tRv"/>
+                        <segue destination="8DD-ij-4iE" kind="relationship" relationship="viewControllers" id="0eW-z0-dEC"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7pT-ac-O33" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-467" y="826"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="EXd-Bc-GV2">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="umJ-rn-AmW" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Home" image="home-1" id="4HP-Dz-hCw">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="4"/>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="PZI-Er-NfD">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="56"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="eDP-Nd-vWb" kind="relationship" relationship="rootViewController" id="bK3-Oq-PeD"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hmK-V9-t5j" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1100.467289719626" y="1581.6414686825055"/>
+        </scene>
+        <!--Calendar-->
+        <scene sceneID="cxd-RW-EQ6">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="8DD-ij-4iE" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Calendar" image="calendar" selectedImage="calendar" id="sO9-zr-y0U"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="iJh-4R-fgT">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="56"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ARG-5M-gKV" kind="relationship" relationship="rootViewController" id="TlZ-IS-XUD"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6OC-6u-PRB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1244.8598130841121" y="1581.6414686825055"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
