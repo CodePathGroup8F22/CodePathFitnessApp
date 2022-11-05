@@ -43,7 +43,7 @@ class WorkoutLogViewController: UIViewController, UITableViewDelegate, UITableVi
         
         query.findObjectsInBackground{ (workout, error) in
             if workout != nil {
-                var workoutPost = workout!
+                let workoutPost = workout!
                 self.workoutPosts = workoutPost
                 self.tableViewWorkoutLog.reloadData()
             } else {
@@ -79,6 +79,5 @@ class WorkoutLogViewController: UIViewController, UITableViewDelegate, UITableVi
         cell.weightLabel.text!.append( (workoutPost["weight"] as! String))
         print("SUCCESS")
         return cell
-        
     }
 }
