@@ -19,6 +19,11 @@ class CalendarCellViewController: UIViewController, FSCalendarDelegate, FSCalend
         
         calendar.delegate = self
         calendar.dataSource = self
+        calendar.scrollDirection = .vertical
+        calendar.pagingEnabled = false
+        calendar.layer.cornerRadius = 30
+        calendar.clipsToBounds = true
+        calendar.appearance.headerSeparatorColor = UIColor(displayP3Red: 41, green: 56, blue: 83, alpha: 0)
 
         // Do any additional setup after loading the view.
     }
