@@ -8,7 +8,7 @@
 import UIKit
 import Parse
 
-class LoginViewController: UIViewController {
+class LoginViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var invalidLabel: UILabel!
     @IBOutlet weak var emailLabel: UITextField!
@@ -24,6 +24,9 @@ class LoginViewController: UIViewController {
 //        gradientLayer.colors = [UIColor.blue.cgColor, UIColor.black.cgColor]
 //        self.view.layer.insertSublayer(gradientLayer, at: 0)
         // Do any additional setup after loading the view.
+    }
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
     }
     
     @IBAction func onLogin(_ sender: Any) {
