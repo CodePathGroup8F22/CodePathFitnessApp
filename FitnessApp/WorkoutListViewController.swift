@@ -60,7 +60,6 @@ class WorkoutListViewController: UIViewController, UITableViewDataSource, UITabl
             cell.name.text = workout["name"] as! String
             let temp = workout["difficulty"] as! Int
             cell.difficultyText.text = "Difficulty: "
-            print(cell.arr)
             switch temp {
                 case 1:
                 cell.fire1.isHidden = false;
@@ -101,7 +100,6 @@ class WorkoutListViewController: UIViewController, UITableViewDataSource, UITabl
         let workout = self.workouts[indexPath.row]
         let DetailViewController = segue.destination as! DetailViewController
         DetailViewController.workout = (workout as PFObject?)!
-        print(workout)
                 
         tableView.deselectRow(at: indexPath, animated: true)
     }

@@ -42,7 +42,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
             }
                 
         let user = PFUser.current()
-        userLabel.text = user!["firstname"] as! String
+        userLabel.text = (user!["firstname"] as! String) + "!"
         userLabel.isHidden = false
         tempLabel.isHidden = false
     }
