@@ -395,7 +395,7 @@
             </objects>
             <point key="canvasLocation" x="356.07476635514018" y="1550.5399568034559"/>
         </scene>
-        <!--Calendar Cell View Controller-->
+        <!--Calendar-->
         <scene sceneID="YuW-Ns-9EX">
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="ARG-5M-gKV" customClass="CalendarCellViewController" customModule="FitnessApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -446,7 +446,7 @@
                                         <real key="value" value="30"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="headerHeight">
-                                        <real key="value" value="50"/>
+                                        <real key="value" value="35"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
@@ -454,7 +454,7 @@
                         <viewLayoutGuide key="safeArea" id="1ZX-hg-Pst"/>
                         <color key="backgroundColor" red="0.1855253516" green="0.25531004349999997" blue="0.38330744329999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" id="oC9-wB-QXS"/>
+                    <navigationItem key="navigationItem" title="Calendar" largeTitleDisplayMode="always" id="oC9-wB-QXS"/>
                     <connections>
                         <outlet property="calendar" destination="w5U-Ww-ENG" id="CGJ-qy-iOA"/>
                         <segue destination="row-DW-dbj" kind="show" identifier="logSegue" id="c59-s3-mrF"/>
@@ -520,7 +520,7 @@
         <!--Calendar-->
         <scene sceneID="cxd-RW-EQ6">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="8DD-ij-4iE" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="8DD-ij-4iE" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Calendar" image="calendar" selectedImage="calendar" id="sO9-zr-y0U"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="iJh-4R-fgT">
@@ -539,7 +539,7 @@
         <!--Workout Log View Controller-->
         <scene sceneID="vcV-vm-5l2">
             <objects>
-                <viewController id="row-DW-dbj" customClass="WorkoutLogViewController" customModule="FitnessApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="row-DW-dbj" customClass="WorkoutLogViewController" customModule="FitnessApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YHY-IQ-BAV">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="789"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
