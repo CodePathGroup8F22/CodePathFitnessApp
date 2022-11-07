@@ -403,9 +403,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="428" height="789"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="w5U-Ww-ENG" customClass="FSCalendar">
-                                <rect key="frame" x="0.0" y="98" width="428" height="739"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w5U-Ww-ENG" customClass="FSCalendar">
+                                <rect key="frame" x="0.0" y="56" width="428" height="733"/>
                                 <color key="backgroundColor" red="0.24200593400000001" green="0.33303559319999998" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <userDefinedRuntimeAttributes>
@@ -453,6 +452,12 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="1ZX-hg-Pst"/>
                         <color key="backgroundColor" red="0.1855253516" green="0.25531004349999997" blue="0.38330744329999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="w5U-Ww-ENG" firstAttribute="leading" secondItem="1ZX-hg-Pst" secondAttribute="leading" id="0y6-HI-YQq"/>
+                            <constraint firstItem="w5U-Ww-ENG" firstAttribute="trailing" secondItem="1ZX-hg-Pst" secondAttribute="trailing" id="PcB-VG-qWg"/>
+                            <constraint firstItem="w5U-Ww-ENG" firstAttribute="bottom" secondItem="1ZX-hg-Pst" secondAttribute="bottom" id="WlF-5d-Ljw"/>
+                            <constraint firstItem="w5U-Ww-ENG" firstAttribute="top" secondItem="1ZX-hg-Pst" secondAttribute="top" id="dp8-vV-yRU"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Calendar" largeTitleDisplayMode="always" id="oC9-wB-QXS"/>
                     <connections>
