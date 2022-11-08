@@ -15,6 +15,10 @@ class ProfileViewController: UIViewController {
     @IBOutlet weak var emailLabel: UILabel!
     @IBOutlet weak var imageView: UIImageView!
     
+    @IBOutlet weak var ageLabel: UILabel!
+    @IBOutlet weak var weightLabel: UILabel!
+    @IBOutlet weak var heightLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         getData()
@@ -32,6 +36,10 @@ class ProfileViewController: UIViewController {
         let user = PFUser.current()
         firstNameLabel.text = user!["firstname"] as? String
         emailLabel.text = user?.username as? String
+        
+        ageLabel.text = user!["age"] as? String
+        weightLabel.text = user!["weight"] as? String
+        heightLabel.text = user!["height"] as? String
         
         let imageFile = user!["profileImage"] as! PFFileObject
         let urlString = imageFile.url!

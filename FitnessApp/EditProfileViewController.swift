@@ -12,9 +12,10 @@ import AlamofireImage
 class EditProfileViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
     @IBOutlet weak var imageView: UIImageView!
-    @IBOutlet weak var emailLabel: UITextField!
-    @IBOutlet weak var weightLabel: UITextField!
-    @IBOutlet weak var ageLabel: UITextField!
+    @IBOutlet weak var emailTextBox: UITextField!
+    @IBOutlet weak var weightTextBox: UITextField!
+    @IBOutlet weak var ageTextBox: UITextField!
+    @IBOutlet weak var heightTextBox: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,9 +31,10 @@ class EditProfileViewController: UIViewController, UIImagePickerControllerDelega
     @IBAction func onSave(_ sender: Any) {
         let user = PFUser.current()
         
-        let username = emailLabel.text
-        let weight = weightLabel.text
-        let age = ageLabel.text
+        let username = emailTextBox.text
+        let weight = weightTextBox.text
+        let age = ageTextBox.text
+        let height = heightTextBox.text
         
         let imageData = imageView.image!.pngData()
         let file = PFFileObject(data: imageData!)
@@ -41,6 +43,7 @@ class EditProfileViewController: UIViewController, UIImagePickerControllerDelega
         user!["firstname"] = username
         user!["age"] = age
         user!["weight"] = weight
+        user!["height"] = height
         
         user!.saveInBackground{ (success, error) in
             if success {
@@ -63,6 +66,17 @@ class EditProfileViewController: UIViewController, UIImagePickerControllerDelega
         }
         
         present(picker, animated: true, completion: nil)
+    }
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        let image = info[.editedImage] as! UIImage
+            
+        let size = CGSize(width: 300, height: 300)
+        let scaledImage = image.af.imageScaled(to: size)
+            
+        imageView.image = scaledImage
+            
+        dismiss(animated: true, completion: nil)
     }
     
     /*
