@@ -383,7 +383,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0GF-EZ-iWL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-200.46728971962617" y="1581.6414686825055"/>
+            <point key="canvasLocation" x="-1637" y="2380"/>
         </scene>
         <!--WorkoutList-->
         <scene sceneID="wKN-DZ-BL6">
@@ -393,7 +393,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nwv-on-ieT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="356.07476635514018" y="1550.5399568034559"/>
+            <point key="canvasLocation" x="-1637" y="2884"/>
         </scene>
         <!--Calendar-->
         <scene sceneID="YuW-Ns-9EX">
@@ -467,7 +467,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dfh-Xn-cOv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2144.8598130841119" y="1581.6414686825055"/>
+            <point key="canvasLocation" x="-468" y="2380"/>
         </scene>
         <!--WorkoutLog-->
         <scene sceneID="jbb-OH-6Ei">
@@ -477,7 +477,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4c0-KJ-0Fh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3542" y="1582"/>
+            <point key="canvasLocation" x="-468" y="3671"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="lOY-Mq-0zM">
@@ -617,7 +617,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VFT-nF-jSX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1441.1214953271028" y="844.9244060475163"/>
+            <point key="canvasLocation" x="711" y="2380"/>
         </scene>
         <!--Home-->
         <scene sceneID="EXd-Bc-GV2">
@@ -638,7 +638,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hmK-V9-t5j" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1100.467289719626" y="1581.6414686825055"/>
+            <point key="canvasLocation" x="-1636" y="1582"/>
         </scene>
         <!--Calendar-->
         <scene sceneID="cxd-RW-EQ6">
@@ -657,7 +657,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6OC-6u-PRB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1244.8598130841121" y="1581.6414686825055"/>
+            <point key="canvasLocation" x="-468" y="1582"/>
         </scene>
         <!--Workout Log View Controller-->
         <scene sceneID="vcV-vm-5l2">
@@ -691,7 +691,7 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reps:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IAT-Aa-DEk">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reps: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IAT-Aa-DEk">
                                                     <rect key="frame" x="40" y="73.666666666666671" width="368" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -764,7 +764,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w5Z-Hm-boh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2971.9626168224299" y="1581.6414686825055"/>
+            <point key="canvasLocation" x="-468" y="3176"/>
         </scene>
         <!--Profile-->
         <scene sceneID="MiS-yW-LC4">
@@ -783,7 +783,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Ts-xR-E2C" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="541.12149532710282" y="844.9244060475163"/>
+            <point key="canvasLocation" x="711" y="1582"/>
         </scene>
         <!--Edit Profile View Controller-->
         <scene sceneID="zBb-k4-9w2">
@@ -944,7 +944,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="2227.5700934579436" y="844.9244060475163"/>
+            <point key="canvasLocation" x="711" y="3176"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
