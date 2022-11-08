@@ -19,13 +19,24 @@ class EditProfileViewController: UIViewController, UIImagePickerControllerDelega
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        getData()
         imageView.layer.cornerRadius = (imageView.frame.size.width) / 2
         imageView.clipsToBounds = true
         imageView.layer.borderWidth = 3.0
         imageView.layer.borderColor = UIColor.white.cgColor
 
         // Do any additional setup after loading the view.
+    }
+    
+    @objc func getData() {
+                
+        let user = PFUser.current()
+        
+        let imageFile = user!["profileImage"] as! PFFileObject
+        let urlString = imageFile.url!
+        let url = URL(string: urlString)!
+        
+        imageView.af.setImage(withURL: url)
     }
     
     @IBAction func onSave(_ sender: Any) {
@@ -39,11 +50,16 @@ class EditProfileViewController: UIViewController, UIImagePickerControllerDelega
         let imageData = imageView.image!.pngData()
         let file = PFFileObject(data: imageData!)
         
+        
+        if (username?.isEmpty == false) { user!["firstname"] = username }
+        if (weight?.isEmpty == false) { user!["weight"] = weight }
+        if (age?.isEmpty == false) { user!["age"] = age }
+        if (height?.isEmpty == false) {user!["height"] = height}
         user!["profileImage"] = file
-        user!["firstname"] = username
-        user!["age"] = age
-        user!["weight"] = weight
-        user!["height"] = height
+        
+        
+
+        
         
         user!.saveInBackground{ (success, error) in
             if success {
