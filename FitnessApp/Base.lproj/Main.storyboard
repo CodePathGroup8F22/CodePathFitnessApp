@@ -796,7 +796,6 @@
                         <constraints>
                             <constraint firstItem="KYw-oW-YYm" firstAttribute="top" secondItem="f2D-xB-BcY" secondAttribute="bottom" constant="8" id="12h-h0-OfB"/>
                             <constraint firstItem="Iml-Fn-MNy" firstAttribute="leading" secondItem="b55-oJ-IGA" secondAttribute="leadingMargin" constant="2" id="1ag-GA-Xpx"/>
-                            <constraint firstItem="Eg3-DI-StZ" firstAttribute="top" secondItem="KYw-oW-YYm" secondAttribute="bottom" constant="49" id="2f1-od-ddv"/>
                             <constraint firstItem="63w-L9-y7f" firstAttribute="trailing" secondItem="B6F-W1-lcr" secondAttribute="trailing" constant="20" id="3G1-G3-ejD"/>
                             <constraint firstItem="gNb-li-QDV" firstAttribute="top" secondItem="63w-L9-y7f" secondAttribute="top" constant="33" id="84k-X2-f7j"/>
                             <constraint firstItem="Iml-Fn-MNy" firstAttribute="top" secondItem="f2D-xB-BcY" secondAttribute="bottom" constant="29" id="C2l-oH-5nW"/>
