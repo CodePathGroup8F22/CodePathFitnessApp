@@ -38,7 +38,7 @@ class EditProfileViewController: UIViewController, UIImagePickerControllerDelega
         let file = PFFileObject(data: imageData!)
         
         user!["profileImage"] = file
-        user!["username"] = username
+        user!["firstname"] = username
         user!["age"] = age
         user!["weight"] = weight
         
