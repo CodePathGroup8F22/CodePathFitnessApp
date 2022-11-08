@@ -536,7 +536,13 @@
                         <viewLayoutGuide key="safeArea" id="2oQ-MH-GhM"/>
                         <color key="backgroundColor" red="0.16160306329999999" green="0.21940264109999999" blue="0.32493585349999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Profile" id="WLa-R8-qUG"/>
+                    <navigationItem key="navigationItem" title="Profile" id="WLa-R8-qUG">
+                        <barButtonItem key="rightBarButtonItem" title="Edit Profile" id="mbf-L1-lEI">
+                            <connections>
+                                <segue destination="1GM-Sj-e8L" kind="show" id="3ja-zT-RXU"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="emailLabel" destination="fSb-px-dnn" id="eeU-qu-F6m"/>
                         <outlet property="firstNameLabel" destination="oD3-yZ-55c" id="CxI-oV-S49"/>
@@ -718,75 +724,82 @@
             </objects>
             <point key="canvasLocation" x="541.12149532710282" y="844.9244060475163"/>
         </scene>
-        <!--View Controller-->
+        <!--Edit Profile View Controller-->
         <scene sceneID="zBb-k4-9w2">
             <objects>
-                <viewController id="1GM-Sj-e8L" sceneMemberID="viewController">
+                <viewController id="1GM-Sj-e8L" customClass="EditProfileViewController" customModule="FitnessApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="b55-oJ-IGA">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="789"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gNb-li-QDV">
-                                <rect key="frame" x="87" y="77" width="254" height="240"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile_image_holder" translatesAutoresizingMaskIntoConstraints="NO" id="gNb-li-QDV">
+                                <rect key="frame" x="87" y="89" width="254" height="240"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="MfU-wI-txg" appends="YES" id="lbj-U8-gPR"/>
+                                </connections>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B6F-W1-lcr">
-                                <rect key="frame" x="20" y="332" width="388" height="30"/>
+                                <rect key="frame" x="20" y="344" width="388" height="30"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter email here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XQ2-TC-08F">
-                                <rect key="frame" x="22" y="370" width="384" height="22.666666666666686"/>
+                                <rect key="frame" x="22" y="382" width="384" height="22.666666666666686"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wLF-LU-pHI">
-                                <rect key="frame" x="22" y="392" width="384" height="1"/>
+                                <rect key="frame" x="22" y="404" width="384" height="1"/>
                                 <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="oIi-Bt-XfW"/>
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Height" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f2D-xB-BcY">
-                                <rect key="frame" x="20" y="422" width="388" height="30"/>
+                                <rect key="frame" x="20" y="434" width="388" height="30"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Age" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vZU-fC-Z25">
-                                <rect key="frame" x="20" y="512" width="388" height="30"/>
+                                <rect key="frame" x="20" y="524" width="388" height="30"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter height here." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KYw-oW-YYm">
-                                <rect key="frame" x="22" y="460" width="384" height="23"/>
+                                <rect key="frame" x="22" y="472" width="384" height="23"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Iml-Fn-MNy">
-                                <rect key="frame" x="22" y="481" width="186" height="1"/>
+                                <rect key="frame" x="22" y="493" width="186" height="1"/>
                                 <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="DQa-m5-6fu"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="agk-od-cqx">
-                                <rect key="frame" x="22" y="575.66666666666663" width="166" height="1"/>
+                                <rect key="frame" x="22" y="587.66666666666663" width="166" height="1"/>
                                 <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="FOG-bP-doD"/>
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P1q-ad-8FV">
-                                <rect key="frame" x="153" y="612.33333333333337" width="122" height="31"/>
+                                <rect key="frame" x="153" y="624.33333333333337" width="122" height="31"/>
                                 <color key="backgroundColor" red="0.1960784314" green="0.62295550180000003" blue="0.90196078430000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Save"/>
+                                <connections>
+                                    <action selector="onSave:" destination="1GM-Sj-e8L" eventType="touchUpInside" id="R5y-to-6jN"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter age here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Eg3-DI-StZ">
-                                <rect key="frame" x="22" y="553" width="384" height="22.666666666666629"/>
+                                <rect key="frame" x="22" y="565" width="384" height="22.666666666666629"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -832,8 +845,20 @@
                             <constraint firstItem="63w-L9-y7f" firstAttribute="trailing" secondItem="f2D-xB-BcY" secondAttribute="trailing" constant="20" id="yZq-H7-rtL"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="DcV-XP-a2D"/>
+                    <connections>
+                        <outlet property="ageLabel" destination="Eg3-DI-StZ" id="kQc-47-Izy"/>
+                        <outlet property="emailLabel" destination="XQ2-TC-08F" id="sPa-G8-rTm"/>
+                        <outlet property="heightLabel" destination="KYw-oW-YYm" id="nby-xV-OWb"/>
+                        <outlet property="imageView" destination="gNb-li-QDV" id="ruP-Wu-h4T"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yk2-Ii-DRj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="MfU-wI-txg">
+                    <connections>
+                        <action selector="onProfileButton:" destination="1GM-Sj-e8L" id="Xd7-Z0-oaA"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="2229" y="845"/>
         </scene>

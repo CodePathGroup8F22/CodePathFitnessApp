@@ -17,7 +17,7 @@ class ProfileViewController: UIViewController, UIImagePickerControllerDelegate, 
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        getData()
+//        getData()
         
         imageView.layer.cornerRadius = (imageView.frame.size.width) / 2
         imageView.clipsToBounds = true
@@ -39,6 +39,7 @@ class ProfileViewController: UIViewController, UIImagePickerControllerDelegate, 
         
         imageView.af.setImage(withURL: url)
     }
+  
     
     @IBAction func onProfileButton(_ sender: Any) {
         let picker = UIImagePickerController()
@@ -55,31 +56,7 @@ class ProfileViewController: UIViewController, UIImagePickerControllerDelegate, 
         present(picker, animated: true, completion: nil)
     }
     
-    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
-        let image = info[.editedImage] as! UIImage
-        
-        let size = CGSize(width: 300, height: 300)
-        let scaledImage = image.af.imageScaled(to: size)
-        
-        imageView.image = scaledImage
-        
-        let user = PFUser.current()
-        
-        let imageData = imageView.image!.pngData()
-        let file = PFFileObject(name: "image.png", data: imageData!)
-        
-        user!["profileImage"] = file
-        
-        user!.saveInBackground { (success, error) in
-            if success {
-                self.dismiss(animated: true, completion: nil)
-                print("saved image")
-            }
-            else {
-                print("error")
-            }
-        }
-    }
+  
     
     /*
     // MARK: - Navigation
