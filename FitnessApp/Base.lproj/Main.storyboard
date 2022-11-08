@@ -528,9 +528,6 @@
                                 <rect key="frame" x="64" y="127" width="300" height="300"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <gestureRecognizers/>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="9h7-Xv-cRf" appends="YES" id="xEb-Po-Djz"/>
-                                </connections>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="2oQ-MH-GhM"/>
@@ -550,11 +547,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VFT-nF-jSX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="9h7-Xv-cRf">
-                    <connections>
-                        <action selector="onProfileButton:" destination="JZl-GK-Xjc" id="U17-cX-KZs"/>
-                    </connections>
-                </tapGestureRecognizer>
+                <tapGestureRecognizer id="9h7-Xv-cRf"/>
             </objects>
             <point key="canvasLocation" x="1441.1214953271028" y="844.9244060475163"/>
         </scene>
