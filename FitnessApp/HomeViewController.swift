@@ -25,6 +25,12 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         getData()
     }
     
+    @IBAction func onLogout(_ sender: Any) {
+        PFUser.logOut()
+        UserDefaults.standard.set(false, forKey: "userLoggedIn")
+        self.dismiss(animated: true, completion: nil)
+    }
+    
     
     @objc func getData() {
         let query = PFQuery(className: "muscleGroup")
