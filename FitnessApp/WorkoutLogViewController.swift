@@ -31,6 +31,7 @@ class WorkoutLogViewController: UIViewController, UITableViewDelegate, UITableVi
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         print("Workout Log: ", date)
+        getData()
         
     }
     

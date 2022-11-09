@@ -44,7 +44,8 @@ class AddWorkoutViewController: UIViewController, UITextFieldDelegate {
         
         workoutPost.saveInBackground {(success, error) in
             if success {
-                self.dismiss(animated: true, completion: nil)
+//                self.dismiss(animated: true, completion: nil)
+                self.navigationController?.popViewController(animated: true)
                 print("saved")
             }
             else {
