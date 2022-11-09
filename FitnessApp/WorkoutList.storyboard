@@ -4,7 +4,6 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -23,12 +22,12 @@
                                     <constraint firstAttribute="width" constant="388" id="qpm-aQ-yM4"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="35"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="ZSR-o5-shm">
                                 <rect key="frame" x="0.0" y="122" width="428" height="804"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="WorkoutCell" rowHeight="90" id="UUP-YD-5IS" customClass="WorkoutCell" customModule="FitnessApp" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="44.666666030883789" width="428" height="90"/>
@@ -40,7 +39,7 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Individual Workout Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E9L-mX-MWZ">
                                                     <rect key="frame" x="20" y="13" width="388" height="30"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                                    <nil key="textColor"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Difficulty" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LFg-VU-6Yb">
@@ -113,6 +112,7 @@
                                                 <constraint firstAttribute="bottomMargin" secondItem="1wk-hk-ZPq" secondAttribute="bottom" constant="2" id="y7r-XX-4fA"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
                                             <outlet property="difficultyText" destination="LFg-VU-6Yb" id="H5J-Ss-guA"/>
                                             <outlet property="fire1" destination="bep-Dd-SaG" id="fjP-s5-6MZ"/>
@@ -128,7 +128,7 @@
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="ZSR-o5-shm" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="8xe-eu-BhU"/>
                             <constraint firstItem="ZSR-o5-shm" firstAttribute="top" secondItem="ewm-pO-zbx" secondAttribute="bottom" constant="8" symbolic="YES" id="9ca-tJ-ouY"/>
@@ -167,59 +167,59 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Workout Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lhX-40-4iI">
                                 <rect key="frame" x="20" y="458" width="388" height="36"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Difficulty:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8K2-OS-Eep">
                                 <rect key="frame" x="20" y="503" width="82.666666666666671" height="24"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="wordWrap" numberOfLines="40" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ird-Ph-5CZ">
+                                <rect key="frame" x="20" y="538" width="388" height="23.333333333333371"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.5" contentMode="scaleAspectFit" image="fire" translatesAutoresizingMaskIntoConstraints="NO" id="FEv-Mz-XaK">
-                                <rect key="frame" x="144" y="502" width="27" height="27"/>
+                                <rect key="frame" x="110" y="502" width="27" height="27"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="27" id="JO3-fC-rMJ"/>
                                     <constraint firstAttribute="height" constant="27" id="r7K-5Z-85W"/>
                                 </constraints>
                             </imageView>
                             <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.5" contentMode="scaleAspectFit" image="fire" translatesAutoresizingMaskIntoConstraints="NO" id="49w-ca-xq7">
-                                <rect key="frame" x="175" y="502" width="27" height="27"/>
+                                <rect key="frame" x="141" y="502" width="27" height="27"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="27" id="A7g-DA-aAe"/>
                                     <constraint firstAttribute="height" constant="27" id="chb-pj-8TO"/>
                                 </constraints>
                             </imageView>
                             <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.5" contentMode="scaleAspectFit" image="fire" translatesAutoresizingMaskIntoConstraints="NO" id="7cq-js-S4W">
-                                <rect key="frame" x="205" y="502" width="27" height="27"/>
+                                <rect key="frame" x="171" y="502" width="27" height="27"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="27" id="4aV-Sz-YBw"/>
                                     <constraint firstAttribute="height" constant="27" id="EFB-SK-Ego"/>
                                 </constraints>
                             </imageView>
                             <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.5" contentMode="scaleAspectFit" image="fire" translatesAutoresizingMaskIntoConstraints="NO" id="kuO-A7-xTU">
-                                <rect key="frame" x="235" y="502" width="27" height="27"/>
+                                <rect key="frame" x="201" y="502" width="27" height="27"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="27" id="gky-oJ-q02"/>
                                     <constraint firstAttribute="width" constant="27" id="jYL-50-bH8"/>
                                 </constraints>
                             </imageView>
                             <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.5" contentMode="scaleAspectFit" image="fire" translatesAutoresizingMaskIntoConstraints="NO" id="clC-ce-o2f">
-                                <rect key="frame" x="265" y="502" width="27" height="27"/>
+                                <rect key="frame" x="231" y="502" width="27" height="27"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="27" id="Fvy-NW-Dly"/>
                                     <constraint firstAttribute="width" constant="27" id="x1c-ug-azW"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="wordWrap" numberOfLines="40" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ird-Ph-5CZ">
-                                <rect key="frame" x="20" y="538" width="388" height="23.333333333333371"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="djW-Ux-a2V"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="Ird-Ph-5CZ" firstAttribute="leading" secondItem="djW-Ux-a2V" secondAttribute="leading" constant="20" id="4uC-yG-hSu"/>
                             <constraint firstItem="kuO-A7-xTU" firstAttribute="top" secondItem="lhX-40-4iI" secondAttribute="bottom" constant="8" symbolic="YES" id="5Fs-w2-x4T"/>
@@ -238,10 +238,10 @@
                             <constraint firstItem="lhX-40-4iI" firstAttribute="leading" secondItem="djW-Ux-a2V" secondAttribute="leading" constant="20" id="baG-2K-TRl"/>
                             <constraint firstItem="djW-Ux-a2V" firstAttribute="bottom" relation="lessThanOrEqual" secondItem="Ird-Ph-5CZ" secondAttribute="bottom" constant="310.67000000000002" id="c3E-nq-vzz"/>
                             <constraint firstItem="Ird-Ph-5CZ" firstAttribute="top" secondItem="49w-ca-xq7" secondAttribute="bottom" constant="9" id="dAM-6J-g5e"/>
+                            <constraint firstItem="djW-Ux-a2V" firstAttribute="trailing" secondItem="clC-ce-o2f" secondAttribute="trailing" constant="170" id="dx6-ic-9OC"/>
                             <constraint firstItem="clC-ce-o2f" firstAttribute="leading" secondItem="kuO-A7-xTU" secondAttribute="trailing" constant="3" id="elF-qW-OEh"/>
                             <constraint firstItem="FEv-Mz-XaK" firstAttribute="top" secondItem="lhX-40-4iI" secondAttribute="bottom" constant="8" symbolic="YES" id="ffJ-ld-Az5"/>
                             <constraint firstItem="Ird-Ph-5CZ" firstAttribute="top" secondItem="kuO-A7-xTU" secondAttribute="bottom" constant="9" id="qG8-OP-hsm"/>
-                            <constraint firstItem="djW-Ux-a2V" firstAttribute="trailing" secondItem="clC-ce-o2f" secondAttribute="trailing" constant="136" id="qew-iQ-7Kh"/>
                             <constraint firstItem="Ird-Ph-5CZ" firstAttribute="top" secondItem="FEv-Mz-XaK" secondAttribute="bottom" constant="9" id="qos-UR-JSp"/>
                             <constraint firstItem="Ivk-Kr-j7g" firstAttribute="trailing" secondItem="djW-Ux-a2V" secondAttribute="trailing" id="scX-Kd-rBu"/>
                             <constraint firstItem="Ivk-Kr-j7g" firstAttribute="leading" secondItem="djW-Ux-a2V" secondAttribute="leading" id="sfY-0M-aQA"/>
@@ -268,8 +268,5 @@
     </scenes>
     <resources>
         <image name="fire" width="512" height="512"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
     </resources>
 </document>
