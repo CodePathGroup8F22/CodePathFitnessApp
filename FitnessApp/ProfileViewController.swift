@@ -47,11 +47,16 @@ class ProfileViewController: UIViewController {
         weightLabel.text = user!["weight"] as? String
         heightLabel.text = user!["height"] as? String
         
-        let imageFile = user!["profileImage"] as! PFFileObject
-        let urlString = imageFile.url!
-        let url = URL(string: urlString)!
+        if (user!["profileImage"] != nil) {
+            
+            let imageFile = user!["profileImage"] as! PFFileObject
+            let urlString = imageFile.url!
+            let url = URL(string: urlString)!
+            
+            imageView.af.setImage(withURL: url)
+        }
         
-        imageView.af.setImage(withURL: url)
+        
     }
   
     /*
