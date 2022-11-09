@@ -75,9 +75,9 @@ class WorkoutLogViewController: UIViewController, UITableViewDelegate, UITableVi
         
         cell.exerciseLabel.text = workoutPost["workout"] as? String
         
-        cell.setLabel.text!.append( (workoutPost["set"] as! String) )
-        cell.repLabel.text!.append( (workoutPost["reps"] as! String))
-        cell.weightLabel.text!.append( (workoutPost["weight"] as! String))
+        cell.setLabel.text = "Sets: " + (workoutPost["set"] as! String)
+        cell.repLabel.text = "Reps: " + (workoutPost["reps"] as! String)
+        cell.weightLabel.text = "Weight: " +  (workoutPost["weight"] as! String)
         print("SUCCESS")
         return cell
     }
