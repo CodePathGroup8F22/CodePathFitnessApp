@@ -9,7 +9,7 @@ import UIKit
 import Parse
 import AlamofireImage
 
-class EditProfileViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class EditProfileViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextFieldDelegate {
 
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var emailTextBox: UITextField!
@@ -27,7 +27,9 @@ class EditProfileViewController: UIViewController, UIImagePickerControllerDelega
 
         // Do any additional setup after loading the view.
     }
-    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
     
     @objc func getData() {
                 
