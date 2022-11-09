@@ -31,6 +31,10 @@ class ProfileViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        getData()
+    }
 
     @objc func getData() {
                 

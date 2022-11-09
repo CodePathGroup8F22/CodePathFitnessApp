@@ -28,6 +28,7 @@ class EditProfileViewController: UIViewController, UIImagePickerControllerDelega
         // Do any additional setup after loading the view.
     }
     
+    
     @objc func getData() {
                 
         let user = PFUser.current()
@@ -63,7 +64,8 @@ class EditProfileViewController: UIViewController, UIImagePickerControllerDelega
         
         user!.saveInBackground{ (success, error) in
             if success {
-                self.dismiss(animated: true, completion: nil)
+//                self.dismiss(animated: true, completion: nil)
+                self.navigationController?.popViewController(animated: true)
                 print("SUCCESS")
             } else {
                 print("error")
