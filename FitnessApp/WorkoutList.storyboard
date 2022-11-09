@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Muscle Group" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ewm-pO-zbx">
-                                <rect key="frame" x="20" y="80" width="388" height="50"/>
+                                <rect key="frame" x="20" y="64" width="388" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="7Nn-tk-7KI"/>
                                     <constraint firstAttribute="width" constant="388" id="qpm-aQ-yM4"/>
@@ -27,7 +27,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="ZSR-o5-shm">
-                                <rect key="frame" x="0.0" y="138" width="428" height="788"/>
+                                <rect key="frame" x="0.0" y="122" width="428" height="804"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="WorkoutCell" rowHeight="90" id="UUP-YD-5IS" customClass="WorkoutCell" customModule="FitnessApp" customModuleProvider="target">
@@ -136,7 +136,7 @@
                             <constraint firstAttribute="bottom" secondItem="ZSR-o5-shm" secondAttribute="bottom" id="h6F-HO-cph"/>
                             <constraint firstItem="ZSR-o5-shm" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="jcN-De-7gX"/>
                             <constraint firstItem="ewm-pO-zbx" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="nx8-hG-tcX"/>
-                            <constraint firstItem="ewm-pO-zbx" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="36" id="ycd-pL-psJ"/>
+                            <constraint firstItem="ewm-pO-zbx" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="20" id="ycd-pL-psJ"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="t3a-cI-OHB"/>
