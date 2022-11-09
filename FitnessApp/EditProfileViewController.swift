@@ -32,12 +32,14 @@ class EditProfileViewController: UIViewController, UIImagePickerControllerDelega
     @objc func getData() {
                 
         let user = PFUser.current()
+        if (user!["profileImage"] != nil) {
+            let imageFile = user!["profileImage"] as! PFFileObject
+            let urlString = imageFile.url!
+            let url = URL(string: urlString)!
+            
+            imageView.af.setImage(withURL: url)
+        }
         
-        let imageFile = user!["profileImage"] as! PFFileObject
-        let urlString = imageFile.url!
-        let url = URL(string: urlString)!
-        
-        imageView.af.setImage(withURL: url)
     }
     
     @IBAction func onSave(_ sender: Any) {
