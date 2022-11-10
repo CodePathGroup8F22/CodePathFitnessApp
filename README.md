@@ -2,6 +2,7 @@ Original App Design Project -
 ===
 
 # Fitness App
+<img src="https://github.com/CodePathGroup8F22/CodePathFitnessApp/blob/main/Week9.gif"/>
 
 ## Table of Contents
 1. [Overview](#Overview)
