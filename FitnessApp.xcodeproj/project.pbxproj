@@ -22,6 +22,9 @@
 		24560E5C28FF99F300E4C923 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24560E5B28FF99F300E4C923 /* SignUpViewController.swift */; };
 		24560E5E28FFA28700E4C923 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24560E5D28FFA28700E4C923 /* LoginViewController.swift */; };
 		247DDB78290BAA7B00D0A434 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247DDB77290BAA7B00D0A434 /* HomeViewController.swift */; };
+		247F1801292856C5002FCE09 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247F1800292856C4002FCE09 /* SearchViewController.swift */; };
+		247F1804292858E6002FCE09 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247F1803292858E6002FCE09 /* ResultsViewController.swift */; };
+		247F180629285ACD002FCE09 /* GoogleLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247F180529285ACD002FCE09 /* GoogleLocationManager.swift */; };
 		24844E852913033F005EC66F /* HomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24844E842913033F005EC66F /* HomeCell.swift */; };
 		24844E8729130998005EC66F /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24844E8629130998005EC66F /* DetailViewController.swift */; };
 		24CE93CE291A40DE0043A305 /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CE93CD291A40DE0043A305 /* EditProfileViewController.swift */; };
@@ -76,6 +79,9 @@
 		24560E5B28FF99F300E4C923 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		24560E5D28FFA28700E4C923 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		247DDB77290BAA7B00D0A434 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		247F1800292856C4002FCE09 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		247F1803292858E6002FCE09 /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
+		247F180529285ACD002FCE09 /* GoogleLocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleLocationManager.swift; sourceTree = "<group>"; };
 		24844E842913033F005EC66F /* HomeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCell.swift; sourceTree = "<group>"; };
 		24844E8629130998005EC66F /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		24CE93CD291A40DE0043A305 /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
@@ -164,6 +170,8 @@
 				CAAF45272913960200F89320 /* CalendarCellViewController.swift */,
 				CAAF45252913943E00F89320 /* CalendarCell.swift */,
 				24560E3128FF970D00E4C923 /* Main.storyboard */,
+				247F1800292856C4002FCE09 /* SearchViewController.swift */,
+				247F1803292858E6002FCE09 /* ResultsViewController.swift */,
 				2425537B290B811F00E77684 /* WorkoutList.storyboard */,
 				247DDB77290BAA7B00D0A434 /* HomeViewController.swift */,
 				24844E842913033F005EC66F /* HomeCell.swift */,
@@ -175,6 +183,7 @@
 				A401B9B92912FD5A005928BB /* WorkoutLog.storyboard */,
 				A408115D2915B0FA006A48F0 /* WorkoutLogCell.swift */,
 				A4B13A07291472A700BD1A36 /* AddWorkoutViewController.swift */,
+				247F180529285ACD002FCE09 /* GoogleLocationManager.swift */,
 				A401B9BD29130324005928BB /* WorkoutLogViewController.swift */,
 				24560E3428FF971300E4C923 /* Assets.xcassets */,
 				24560E3628FF971300E4C923 /* LaunchScreen.storyboard */,
@@ -227,6 +236,7 @@
 				24560E2528FF970D00E4C923 /* Frameworks */,
 				24560E2628FF970D00E4C923 /* Resources */,
 				CE8077E49A1CB1F78AC0E11C /* [CP] Embed Pods Frameworks */,
+				262B1FE54FD0CAB99EBECAAA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -265,6 +275,7 @@
 				24560E4528FF971300E4C923 /* Frameworks */,
 				24560E4628FF971300E4C923 /* Resources */,
 				2A6B2E544F6BB02723230AB1 /* [CP] Embed Pods Frameworks */,
+				6CC0052942CBA64D7C0D5001 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -371,6 +382,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		262B1FE54FD0CAB99EBECAAA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FitnessApp/Pods-FitnessApp-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FitnessApp/Pods-FitnessApp-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FitnessApp/Pods-FitnessApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		2A6B2E544F6BB02723230AB1 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -432,6 +460,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		6CC0052942CBA64D7C0D5001 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FitnessApp-FitnessAppUITests/Pods-FitnessApp-FitnessAppUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FitnessApp-FitnessAppUITests/Pods-FitnessApp-FitnessAppUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FitnessApp-FitnessAppUITests/Pods-FitnessApp-FitnessAppUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		CE8077E49A1CB1F78AC0E11C /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -458,16 +503,19 @@
 			files = (
 				CAAF45282913960200F89320 /* CalendarCellViewController.swift in Sources */,
 				24560E3028FF970D00E4C923 /* ViewController.swift in Sources */,
+				247F1804292858E6002FCE09 /* ResultsViewController.swift in Sources */,
 				A4B13A08291472A700BD1A36 /* AddWorkoutViewController.swift in Sources */,
 				24255384290B950700E77684 /* WorkoutCell.swift in Sources */,
 				24255382290B83E700E77684 /* WorkoutListViewController.swift in Sources */,
 				24844E8729130998005EC66F /* DetailViewController.swift in Sources */,
+				247F180629285ACD002FCE09 /* GoogleLocationManager.swift in Sources */,
 				CF971E07291A118B005549E3 /* ProfileViewController.swift in Sources */,
 				A401B9BE29130324005928BB /* WorkoutLogViewController.swift in Sources */,
 				247DDB78290BAA7B00D0A434 /* HomeViewController.swift in Sources */,
 				A408115E2915B0FA006A48F0 /* WorkoutLogCell.swift in Sources */,
 				24CE93CE291A40DE0043A305 /* EditProfileViewController.swift in Sources */,
 				24560E2C28FF970D00E4C923 /* AppDelegate.swift in Sources */,
+				247F1801292856C5002FCE09 /* SearchViewController.swift in Sources */,
 				24560E5C28FF99F300E4C923 /* SignUpViewController.swift in Sources */,
 				24560E5E28FFA28700E4C923 /* LoginViewController.swift in Sources */,
 				24844E852913033F005EC66F /* HomeCell.swift in Sources */,

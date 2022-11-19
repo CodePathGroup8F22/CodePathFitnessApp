@@ -509,6 +509,7 @@
                         <segue destination="umJ-rn-AmW" kind="relationship" relationship="viewControllers" id="Bar-dN-tRv"/>
                         <segue destination="8DD-ij-4iE" kind="relationship" relationship="viewControllers" id="0eW-z0-dEC"/>
                         <segue destination="09h-WV-bcT" kind="relationship" relationship="viewControllers" id="vIo-hs-VVB"/>
+                        <segue destination="LfL-QC-sLZ" kind="relationship" relationship="viewControllers" id="er6-2I-R9L"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7pT-ac-O33" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -640,6 +641,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VFT-nF-jSX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="711" y="2380"/>
+        </scene>
+        <!--Search View Controller-->
+        <scene sceneID="9MW-Vk-tOI">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="tpU-2e-b1O" customClass="SearchViewController" customModule="FitnessApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="74v-gH-fN2">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="789"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="cKn-Ib-3dw"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="maD-zz-TKM"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IgW-pM-gbf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1955.6074766355139" y="2379.9136069114475"/>
         </scene>
         <!--Home-->
         <scene sceneID="EXd-Bc-GV2">
@@ -1003,6 +1020,26 @@
                 </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="711" y="3176"/>
+        </scene>
+        <!--Maps-->
+        <scene sceneID="FsV-hw-8nq">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="LfL-QC-sLZ" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="3WJ-jO-Suo"/>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Maps" largeTitleDisplayMode="always" id="JLs-gE-wC2"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="Z8D-5N-2pJ">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="108"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="tpU-2e-b1O" kind="relationship" relationship="rootViewController" id="W31-6p-kMh"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qr8-NW-vd7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1956" y="1582"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>

@@ -7,6 +7,7 @@
 
 import UIKit
 import Parse
+import GooglePlaces
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,7 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        
+        GMSPlacesClient.provideAPIKey("AIzaSyAD4dYBn4S0piz2hhzULtN88Fgw5bVVNfI")
         let parseConfig = ParseClientConfiguration  {
             
             $0.applicationId = "Cc9DPOw0vSCkk5meGqQgTpMtir0aUyvoqKf8zT7l"

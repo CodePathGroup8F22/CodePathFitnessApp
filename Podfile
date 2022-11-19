@@ -19,6 +19,8 @@ target 'FitnessApp' do
   pod 'AlamofireImage'
   pod 'FSCalendar'
   pod 'Parse'
+  pod 'FloatingPanel'
+  pod 'GooglePlaces'
   
   
 end

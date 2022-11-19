@@ -3,7 +3,9 @@ PODS:
   - AlamofireImage (4.2.0):
     - Alamofire (~> 5.4)
   - Bolts/Tasks (1.9.1)
+  - FloatingPanel (2.5.5)
   - FSCalendar (2.8.4)
+  - GooglePlaces (7.2.0)
   - Parse (1.19.3):
     - Parse/Core (= 1.19.3)
   - Parse/Core (1.19.3):
@@ -11,7 +13,9 @@ PODS:
 
 DEPENDENCIES:
   - AlamofireImage
+  - FloatingPanel
   - FSCalendar
+  - GooglePlaces
   - Parse
 
 SPEC REPOS:
@@ -19,16 +23,20 @@ SPEC REPOS:
     - Alamofire
     - AlamofireImage
     - Bolts
+    - FloatingPanel
     - FSCalendar
+    - GooglePlaces
     - Parse
 
 SPEC CHECKSUMS:
   Alamofire: d368e1ff8a298e6dde360e35a3e68e6c610e7204
   AlamofireImage: 34a2d90b0e5fe6a5605f85ae4b7b01e784c60192
   Bolts: 8c1e8aab2f603387b8b9924f57d1d64f43d3ffdc
+  FloatingPanel: a27e7827e0f710fa6236fe2596dd1b5484cb4fc1
   FSCalendar: 2d1d0d9398f12d439f55c1fe0f01525b151b8260
+  GooglePlaces: 590dea495d69431454ea92217033c3184995165d
   Parse: 0abb63a0ff6fa34a3f64b81d595a294e2ece143a
 
-PODFILE CHECKSUM: 1acd522c9155f5095184ef7451124a51537ec3a0
+PODFILE CHECKSUM: 2d594e96716e112447e44455986832f978e8922d
 
 COCOAPODS: 1.11.3
