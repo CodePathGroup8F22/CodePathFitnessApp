@@ -508,8 +508,8 @@
                     <connections>
                         <segue destination="umJ-rn-AmW" kind="relationship" relationship="viewControllers" id="Bar-dN-tRv"/>
                         <segue destination="8DD-ij-4iE" kind="relationship" relationship="viewControllers" id="0eW-z0-dEC"/>
-                        <segue destination="09h-WV-bcT" kind="relationship" relationship="viewControllers" id="vIo-hs-VVB"/>
                         <segue destination="LfL-QC-sLZ" kind="relationship" relationship="viewControllers" id="er6-2I-R9L"/>
+                        <segue destination="09h-WV-bcT" kind="relationship" relationship="viewControllers" id="vIo-hs-VVB"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7pT-ac-O33" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1025,7 +1025,7 @@
         <scene sceneID="FsV-hw-8nq">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="LfL-QC-sLZ" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="3WJ-jO-Suo"/>
+                    <tabBarItem key="tabBarItem" title="Nearby Gym" image="location" id="3WJ-jO-Suo"/>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Maps" largeTitleDisplayMode="always" id="JLs-gE-wC2"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="Z8D-5N-2pJ">
@@ -1048,6 +1048,7 @@
     <resources>
         <image name="calendar" width="25" height="25"/>
         <image name="home-1" width="30" height="30"/>
+        <image name="location" width="32" height="32"/>
         <image name="person.circle" catalog="system" width="128" height="121"/>
         <image name="profile_image_holder" width="360" height="360"/>
         <namedColor name="AccentColor">
