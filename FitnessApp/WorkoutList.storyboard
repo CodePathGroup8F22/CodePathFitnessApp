@@ -176,7 +176,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="wordWrap" numberOfLines="40" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ird-Ph-5CZ">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" text="Label" lineBreakMode="wordWrap" numberOfLines="40" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ird-Ph-5CZ">
                                 <rect key="frame" x="20" y="538" width="388" height="23.333333333333371"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -217,6 +217,16 @@
                                     <constraint firstAttribute="width" constant="27" id="x1c-ug-azW"/>
                                 </constraints>
                             </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Click here to see video." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="cIN-eB-x6V">
+                                <rect key="frame" x="20" y="803" width="388" height="35"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="tJn-C6-nu1"/>
+                                </constraints>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="djW-Ux-a2V"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -225,7 +235,9 @@
                             <constraint firstItem="kuO-A7-xTU" firstAttribute="top" secondItem="lhX-40-4iI" secondAttribute="bottom" constant="8" symbolic="YES" id="5Fs-w2-x4T"/>
                             <constraint firstItem="7cq-js-S4W" firstAttribute="leading" secondItem="49w-ca-xq7" secondAttribute="trailing" constant="3" id="6Pw-Y2-zdJ"/>
                             <constraint firstItem="8K2-OS-Eep" firstAttribute="top" secondItem="lhX-40-4iI" secondAttribute="bottom" constant="9" id="7Kb-ak-yWS"/>
+                            <constraint firstItem="djW-Ux-a2V" firstAttribute="bottom" secondItem="cIN-eB-x6V" secondAttribute="bottom" constant="34" id="C5g-DV-rDC"/>
                             <constraint firstItem="Ird-Ph-5CZ" firstAttribute="top" secondItem="8K2-OS-Eep" secondAttribute="bottom" constant="11" id="CCt-hA-wlL"/>
+                            <constraint firstItem="cIN-eB-x6V" firstAttribute="leading" secondItem="Ird-Ph-5CZ" secondAttribute="leading" id="DAs-jU-Fuh"/>
                             <constraint firstItem="Ird-Ph-5CZ" firstAttribute="top" secondItem="clC-ce-o2f" secondAttribute="bottom" constant="9" id="JwY-GB-0V4"/>
                             <constraint firstItem="Ird-Ph-5CZ" firstAttribute="top" secondItem="7cq-js-S4W" secondAttribute="bottom" constant="9" id="KJv-JQ-eEJ"/>
                             <constraint firstItem="lhX-40-4iI" firstAttribute="top" secondItem="Ivk-Kr-j7g" secondAttribute="bottom" constant="18" id="Lrr-hK-VqE"/>
@@ -247,6 +259,7 @@
                             <constraint firstItem="Ivk-Kr-j7g" firstAttribute="leading" secondItem="djW-Ux-a2V" secondAttribute="leading" id="sfY-0M-aQA"/>
                             <constraint firstItem="clC-ce-o2f" firstAttribute="top" secondItem="lhX-40-4iI" secondAttribute="bottom" constant="8" symbolic="YES" id="thu-GV-Thf"/>
                             <constraint firstItem="49w-ca-xq7" firstAttribute="top" secondItem="lhX-40-4iI" secondAttribute="bottom" constant="8" symbolic="YES" id="u0R-u4-5o5"/>
+                            <constraint firstItem="cIN-eB-x6V" firstAttribute="trailing" secondItem="Ird-Ph-5CZ" secondAttribute="trailing" id="uvD-8I-cXJ"/>
                             <constraint firstItem="djW-Ux-a2V" firstAttribute="trailing" secondItem="Ird-Ph-5CZ" secondAttribute="trailing" constant="20" id="zJg-Cy-OiP"/>
                         </constraints>
                     </view>
@@ -259,6 +272,7 @@
                         <outlet property="fire5" destination="clC-ce-o2f" id="jnH-zo-zJi"/>
                         <outlet property="imagePoster" destination="Ivk-Kr-j7g" id="OxT-xY-ESV"/>
                         <outlet property="name" destination="lhX-40-4iI" id="O6z-jx-JHg"/>
+                        <outlet property="textView" destination="cIN-eB-x6V" id="gqO-UV-Nio"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UaQ-Xc-Z28" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

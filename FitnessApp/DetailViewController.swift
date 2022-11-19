@@ -20,6 +20,7 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var name: UILabel!
     @IBOutlet weak var imagePoster: UIImageView!
     @IBOutlet weak var descriptionLabel: UILabel!
+    @IBOutlet weak var textView: UITextView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,8 +38,36 @@ class DetailViewController: UIViewController {
             fire4.isHidden = false }
         if count >= 5 {
             fire5.isHidden = false }
+        
+        if let link = workout["link"] as? String {
+            let attributedString = NSMutableAttributedString(string: "Click here to see video.")
+            let url = URL(string: "\(link)")!
+            let boldFont = UIFont(name: "Helvetica", size: 20.0) as Any
+
+            // Set the 'click here' substring to be the link
+            attributedString.setAttributes([.link: url], range: NSMakeRange(0, attributedString.length))
+            
+            attributedString.addAttribute(NSAttributedString.Key.font, value: boldFont, range: NSMakeRange(0, attributedString.length))
+            
+            textView.attributedText = attributedString
+            textView.isUserInteractionEnabled = true
+            textView.isEditable = false
+            // Set how links should appear: blue and underlined
+            textView.linkTextAttributes = [
+                .foregroundColor: UIColor.lightGray,
+                .underlineStyle: NSUnderlineStyle.single.rawValue
+            ]
+        } else {
+            textView.isHidden = true
+        }
+        
+//        textView.isEditable = false
+//        textView.text = workout["link"] as! String
+//        textView.dataDetectorTypes = .link
         // Do any additional setup after loading the view.
     }
+        
+        
     
     
     /*
