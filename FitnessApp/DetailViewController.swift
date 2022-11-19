@@ -39,24 +39,27 @@ class DetailViewController: UIViewController {
         if count >= 5 {
             fire5.isHidden = false }
         
-        if let link = workout["link"] as? String {
-            let attributedString = NSMutableAttributedString(string: "Click here to see video.")
-            let url = URL(string: "\(link)")!
-            let boldFont = UIFont(name: "Helvetica", size: 20.0) as Any
+        if let link = workout["link"]{
+            if link != nil {
+                let attributedString = NSMutableAttributedString(string: "Click here to see video.")
+                let url = URL(string: "\(link)")
+                let boldFont = UIFont(name: "Helvetica", size: 20.0) as Any
 
-            // Set the 'click here' substring to be the link
-            attributedString.setAttributes([.link: url], range: NSMakeRange(0, attributedString.length))
+                // Set the 'click here' substring to be the link
+                attributedString.setAttributes([.link: url], range: NSMakeRange(0, attributedString.length))
+                
+                attributedString.addAttribute(NSAttributedString.Key.font, value: boldFont, range: NSMakeRange(0, attributedString.length))
+                
+                self.textView.attributedText = attributedString
+                self.textView.isUserInteractionEnabled = true
+                self.textView.isEditable = false
+                // Set how links should appear: blue and underlined
+                self.textView.linkTextAttributes = [
+                    .foregroundColor: UIColor.lightGray,
+                    .underlineStyle: NSUnderlineStyle.single.rawValue
+                ]
+            }
             
-            attributedString.addAttribute(NSAttributedString.Key.font, value: boldFont, range: NSMakeRange(0, attributedString.length))
-            
-            textView.attributedText = attributedString
-            textView.isUserInteractionEnabled = true
-            textView.isEditable = false
-            // Set how links should appear: blue and underlined
-            textView.linkTextAttributes = [
-                .foregroundColor: UIColor.lightGray,
-                .underlineStyle: NSUnderlineStyle.single.rawValue
-            ]
         } else {
             textView.isHidden = true
         }
