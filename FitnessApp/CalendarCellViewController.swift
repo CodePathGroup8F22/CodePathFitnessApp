@@ -11,6 +11,7 @@ import FSCalendar
 class CalendarCellViewController: UIViewController, FSCalendarDelegate, FSCalendarDataSource {
     
     var calDate : String = ""
+    var weekday : String = ""
 
     @IBOutlet weak var calendar: FSCalendar!
     
@@ -39,7 +40,10 @@ class CalendarCellViewController: UIViewController, FSCalendarDelegate, FSCalend
         //print("New date: ", newDate)
         self.calDate = newDate
         //print("Calender date: ", calDate)
-        
+        var weekdayFormatter = DateFormatter()
+        weekdayFormatter.dateFormat = "EEEE, dd"
+        let newDay = weekdayFormatter.string(from: date)
+        weekday = newDay
         self.performSegue(withIdentifier: "logSegue", sender: (Any).self)
         
     }
@@ -47,9 +51,10 @@ class CalendarCellViewController: UIViewController, FSCalendarDelegate, FSCalend
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
-       let cell = sender as? Date
+        let cell = sender as? Date
         let viewController = segue.destination as? WorkoutLogViewController
         viewController?.date = calDate
+        viewController?.weekday = weekday
         
     }
     

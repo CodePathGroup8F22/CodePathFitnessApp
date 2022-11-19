@@ -16,10 +16,11 @@ class WorkoutLogViewController: UIViewController, UITableViewDelegate, UITableVi
     var workoutPosts = [PFObject]()
     
     var date : String = ""
+    var weekday: String = ""
     var user = PFUser.current()
     override func viewDidLoad() {
         super.viewDidLoad()
-        headerLabel.text = date
+        headerLabel.text = weekday
         tableViewWorkoutLog.delegate = self
         tableViewWorkoutLog.dataSource = self
         tableViewWorkoutLog.rowHeight = 150
@@ -37,7 +38,7 @@ class WorkoutLogViewController: UIViewController, UITableViewDelegate, UITableVi
     
     @objc func getData() {
         let query = PFQuery(className: "workoutPost")
-        query.includeKeys(["user","date"])
+        query.includeKeys(["user","date","objectId"])
         query.whereKey("user", equalTo: user!.objectId!)
         query.whereKey("date", equalTo: date)
         query.limit = 20
@@ -78,7 +79,33 @@ class WorkoutLogViewController: UIViewController, UITableViewDelegate, UITableVi
         cell.setLabel.text = "Sets: " + (workoutPost["set"] as! String)
         cell.repLabel.text = "Reps: " + (workoutPost["reps"] as! String)
         cell.weightLabel.text = "Weight: " +  (workoutPost["weight"] as! String)
-        print("SUCCESS")
+//        print("SUCCESS")
         return cell
+    }
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            tableView.beginUpdates()
+            let workoutPost = workoutPosts[indexPath.row]
+            print(workoutPost)
+            let objectId = workoutPost.objectId as! String
+            let query = PFQuery(className: "workoutPost")
+            query.includeKey("objectId")
+            query.whereKey("objectId", equalTo: objectId)
+            query.limit = 1
+            query.getObjectInBackground(withId: objectId){ (workout,error) in
+                if workout != nil {
+                    workout!.deleteInBackground()
+                }
+            }
+            workoutPosts.remove(at: indexPath.row)
+            tableView.deleteRows(at: [indexPath], with: .fade)
+            
+            
+            tableView.endUpdates()
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCell.EditingStyle {
+        return .delete
     }
 }
