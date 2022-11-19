@@ -859,7 +859,7 @@
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter username here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XQ2-TC-08F">
                                 <rect key="frame" x="20" y="407" width="388" height="22.666666666666686"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" white="0.1116602891" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -949,7 +949,7 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="63w-L9-y7f"/>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="0.11166028911564625" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="SoI-Jx-JKR" firstAttribute="top" secondItem="J9B-3p-cxY" secondAttribute="bottom" constant="8" symbolic="YES" id="1As-YI-ndh"/>
                             <constraint firstItem="J9B-3p-cxY" firstAttribute="top" secondItem="l6l-o9-51L" secondAttribute="bottom" constant="20" id="1lw-83-Cvv"/>

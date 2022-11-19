@@ -28,10 +28,10 @@
 		24844E852913033F005EC66F /* HomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24844E842913033F005EC66F /* HomeCell.swift */; };
 		24844E8729130998005EC66F /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24844E8629130998005EC66F /* DetailViewController.swift */; };
 		24CE93CE291A40DE0043A305 /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CE93CD291A40DE0043A305 /* EditProfileViewController.swift */; };
-		67F1B09ECEB58A9199C091A6 /* Pods_FitnessApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 220EDDBE4A59BEF0D1C160EF /* Pods_FitnessApp.framework */; };
 		A401B9BA2912FD5B005928BB /* WorkoutLog.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A401B9B92912FD5A005928BB /* WorkoutLog.storyboard */; };
 		A401B9BE29130324005928BB /* WorkoutLogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A401B9BD29130324005928BB /* WorkoutLogViewController.swift */; };
 		A408115E2915B0FA006A48F0 /* WorkoutLogCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A408115D2915B0FA006A48F0 /* WorkoutLogCell.swift */; };
+		A450B8302928992100D622C8 /* Pods_FitnessApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 220EDDBE4A59BEF0D1C160EF /* Pods_FitnessApp.framework */; };
 		A4B13A08291472A700BD1A36 /* AddWorkoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B13A07291472A700BD1A36 /* AddWorkoutViewController.swift */; };
 		A638E711504F38651B472A39 /* Pods_FitnessAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B76B6AC0760378DD83D90E95 /* Pods_FitnessAppTests.framework */; };
 		CAAF45262913943E00F89320 /* CalendarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAAF45252913943E00F89320 /* CalendarCell.swift */; };
@@ -106,7 +106,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				67F1B09ECEB58A9199C091A6 /* Pods_FitnessApp.framework in Frameworks */,
+				A450B8302928992100D622C8 /* Pods_FitnessApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -696,6 +696,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = QWB7M6VP43;
@@ -713,6 +714,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = code.FitnessApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -725,6 +727,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = QWB7M6VP43;
@@ -742,6 +745,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = code.FitnessApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
