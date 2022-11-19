@@ -217,7 +217,7 @@
                                     <constraint firstAttribute="width" constant="27" id="x1c-ug-azW"/>
                                 </constraints>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Click here to see video." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="cIN-eB-x6V">
+                            <textView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Click here to see video." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="cIN-eB-x6V">
                                 <rect key="frame" x="20" y="803" width="388" height="35"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>

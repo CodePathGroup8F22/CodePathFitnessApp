@@ -39,30 +39,6 @@ class DetailViewController: UIViewController {
         if count >= 5 {
             fire5.isHidden = false }
         
-        if let link = workout["link"]{
-            if link != nil {
-                let attributedString = NSMutableAttributedString(string: "Click here to see video.")
-                let url = URL(string: "\(link)")
-                let boldFont = UIFont(name: "Helvetica", size: 20.0) as Any
-
-                // Set the 'click here' substring to be the link
-                attributedString.setAttributes([.link: url], range: NSMakeRange(0, attributedString.length))
-                
-                attributedString.addAttribute(NSAttributedString.Key.font, value: boldFont, range: NSMakeRange(0, attributedString.length))
-                
-                self.textView.attributedText = attributedString
-                self.textView.isUserInteractionEnabled = true
-                self.textView.isEditable = false
-                // Set how links should appear: blue and underlined
-                self.textView.linkTextAttributes = [
-                    .foregroundColor: UIColor.lightGray,
-                    .underlineStyle: NSUnderlineStyle.single.rawValue
-                ]
-            }
-            
-        } else {
-            textView.isHidden = true
-        }
         
 //        textView.isEditable = false
 //        textView.text = workout["link"] as! String
@@ -70,7 +46,37 @@ class DetailViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
         
-        
+    override func viewDidAppear(_ animated: Bool) {
+        DispatchQueue.main.async {
+            if let link = self.workout["link"]{
+                if link as! String != "" {
+                    let attributedString = NSMutableAttributedString(string: "Click here to see video.")
+                    let url = URL(string: "\(link)")
+                    let boldFont = UIFont(name: "Helvetica", size: 20.0) as Any
+                    print(link)
+                    attributedString.setAttributes([.link: url], range: NSMakeRange(0, attributedString.length))
+                    
+                    attributedString.addAttribute(NSAttributedString.Key.font, value: boldFont, range: NSMakeRange(0, attributedString.length))
+                    
+                    self.textView.isHidden = false
+                    
+                    self.textView.attributedText = attributedString
+                    self.textView.isUserInteractionEnabled = true
+                    self.textView.isEditable = false
+                    // Set how links should appear: blue and underlined
+                    self.textView.linkTextAttributes = [
+                        .foregroundColor: UIColor.lightGray,
+                        .underlineStyle: NSUnderlineStyle.single.rawValue
+                    ]
+                } else {
+                    self.textView.isHidden = true
+                }
+                
+            } else {
+                self.textView.isHidden = true
+            }
+        }
+    }
     
     
     /*
