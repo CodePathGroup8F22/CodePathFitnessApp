@@ -39,6 +39,15 @@ class SearchViewController: UIViewController, UISearchResultsUpdating {
 //        let annotations = mapView.annotations
 //        mapView.removeAnnotations(annotations)
         // Do any additional setup after loading the view.
+        
+//        if let coor = mapView.userLocation.location?.coordinate{
+//            didTapPlace(with: coor)
+//        }
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        let coordinate = CLLocationCoordinate2D(latitude: 37.30249727080044, longitude: -120.48294761375044)
+        didTapPlace(with: coordinate)
     }
     
     override func viewDidLayoutSubviews() {
